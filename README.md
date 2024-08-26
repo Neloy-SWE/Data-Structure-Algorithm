@@ -18,8 +18,7 @@ Data structure in which data elements are arranged sequentially or linearly, whe
 Data structure where data elements are not placed sequentially or linearly are called non-linear data structures.
 
 
-**Array:** (linear data structure)
-
+**Array:** (linear data structure)<br>
 Type:<br>
 on the basis of size: fixed size, dynamic size.<br>
 on the basis of dimensions: 1,2,3.. dimention.
