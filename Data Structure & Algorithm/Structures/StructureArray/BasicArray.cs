@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
 
 namespace Data_Structure___Algorithm.Structures.StructureArray
 
@@ -32,11 +27,11 @@ namespace Data_Structure___Algorithm.Structures.StructureArray
 
 
         // dynamic:
-        ArrayList arr7 = new ArrayList();
+        ArrayList arr7 = new();
         // we can add any type of data in arr7. ArrayList is non generic. there is no fixed length of arr7.
         // ref: https://www.c-sharpcorner.com/article/difference-between-array-and-arraylist-in-c-sharp/
 
-        public void initializeHelper()
+        public void InitializeHelper()
         {
             // we can initialize value according to index.
             arr5[0] = 1;
@@ -48,8 +43,18 @@ namespace Data_Structure___Algorithm.Structures.StructureArray
 
             // we can also initialize value like this at once later after declaration.
             arr1 = [1, 2, 3];
+
+
+            // add value to dynamic
+            arr7.Add(1);
+            arr7.Add("hello");
+            arr7.Add(null);
         }
 
+        public void ShowDynamic()
+        {
+            Console.WriteLine(arr7);
+        }
 
     }
 }
