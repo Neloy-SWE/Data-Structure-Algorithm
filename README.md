@@ -20,7 +20,6 @@ Data structure where data elements are not placed sequentially or linearly are c
 
 **Array:** (linear data structure)
 
-Type:
-
-on the basis of size: fixed size, dynamic size.
+Type:<br>
+on the basis of size: fixed size, dynamic size.<br>
 on the basis of dimensions: 1,2,3.. dimention.
