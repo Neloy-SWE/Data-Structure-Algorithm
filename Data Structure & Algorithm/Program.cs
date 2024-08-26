@@ -1,3 +1,5 @@
-﻿/// array
+﻿
+using Data_Structure___Algorithm.Structures.StructureArray;
 
-Console.WriteLine("Hello world");
+/// array
+BasicArray basicArray = new BasicArray();
