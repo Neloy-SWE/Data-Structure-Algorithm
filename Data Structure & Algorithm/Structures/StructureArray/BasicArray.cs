@@ -53,7 +53,12 @@ namespace Data_Structure___Algorithm.Structures.StructureArray
 
         public void ShowDynamic()
         {
-            Console.WriteLine(arr7);
+            Console.WriteLine("Show Dynamic array:");
+            for (int i = 0; i < arr7.Count; i++)
+            {
+                Console.Write(arr7[i] + " ");
+            }
+            Console.WriteLine();
         }
 
     }
