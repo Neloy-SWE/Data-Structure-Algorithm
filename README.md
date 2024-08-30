@@ -20,5 +20,21 @@ Data structure where data elements are not placed sequentially or linearly are c
 
 **Array:** (linear data structure)<br>
 Type:<br>
-on the basis of size: fixed size, dynamic size.<br>
-on the basis of dimensions: 1,2,3.. dimention.
+1. on the basis of size: fixed size, dynamic size.
+2. on the basis of dimensions: 1,2,3.. dimention.
+
+
+**Linked List:** (linear data structure) consists of a series of nodes connected by pointers or references. each node has has two parts: **data** and **next pointer**.<br>
+Note:<br>
+1. it mainly allows efficient insertion and deletion operations compared to arrays.
+2. linked list elements are not stored at a contiguous location.
+3. use to implements other data structures like: stack, queue, deque.
+4. it is a dynamic data structure.
+5. avoids the wastage of memory.
+6. we cannot access any elements in a linked list directly.<br>
+Type:<br>
+1. Singly
+2. Doubly
+3. Circular
+4. Circular doubly
+5. Header
