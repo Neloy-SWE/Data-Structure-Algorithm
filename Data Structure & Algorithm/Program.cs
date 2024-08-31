@@ -42,6 +42,17 @@ head2 = SinglyInsert.InsertAtGivenNode(node: head2, data: 1, key: 10);
 // insert at a specific point:
 //ShowLinkedList.ShowSingly(head2);
 head2 = SinglyInsert.InsertAtSpecificPosition(node: head2, data: 8, position: 3);
-ShowLinkedList.ShowSingly(head2);
+ShowLinkedList.ShowSingly(head2, "After insert at specific position:");
 
+
+// delete at front:
+head2 = SinglyDelete.DeleteAtFront(node: head2);
+ShowLinkedList.ShowSingly(head2, "After delete from front");
+
+// delete at end:
+head2 = SinglyDelete.DeleteAtEnd(node: head2);
+ShowLinkedList.ShowSingly(head2, "After delete from end");
+
+// delete at position:
+ShowLinkedList.ShowSingly(SinglyDelete.DeleteAtPostion(node: head2, position: 2), "After delete at position: 2");
 

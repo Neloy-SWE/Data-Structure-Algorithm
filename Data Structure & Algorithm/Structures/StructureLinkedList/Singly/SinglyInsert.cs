@@ -82,12 +82,12 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly
 
             Node currentNode = node;
 
-            for (int i = 1; i<position - 1 && currentNode.next !=null; ++i)
+            for (int i = 1; i < position - 1 && currentNode.next != null; ++i)
             {
-                
+
                 currentNode = currentNode.next;
-                ShowLinkedList.ShowSingly(currentNode);
-                ShowLinkedList.ShowSingly(node);
+                //ShowLinkedList.ShowSingly(currentNode);
+                //ShowLinkedList.ShowSingly(node);
             }
 
             if (currentNode == null)
