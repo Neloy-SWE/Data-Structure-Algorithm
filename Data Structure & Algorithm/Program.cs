@@ -19,6 +19,9 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
 
 
 /// linked list
+
+// singly linked list:
+
 //Node head = new(1);
 //head.next = new(2);
 //head.next.next = new(3);
@@ -56,3 +59,5 @@ ShowLinkedList.ShowSingly(head2, "After delete from end");
 // delete at position:
 ShowLinkedList.ShowSingly(SinglyDelete.DeleteAtPostion(node: head2, position: 2), "After delete at position: 2");
 
+// search:
+SinglySearch.Get(head2, 5);
