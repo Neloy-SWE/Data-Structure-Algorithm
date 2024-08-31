@@ -8,8 +8,18 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList
 {
     internal class ShowLinkedList
     {
-        public static void ShowSingly(Node node)
+
+        // void ShowMessage(string message)
+        static void ShowMessage(string message)
         {
+            Console.WriteLine("\n\n" + message);
+        }
+
+        public static void ShowSingly(Node node, string message)
+        {
+            //new ShowLinkedList().ShowMessage(message);
+            ShowMessage(message);
+
             Node currentNode = node;
             while (currentNode != null)
             {
