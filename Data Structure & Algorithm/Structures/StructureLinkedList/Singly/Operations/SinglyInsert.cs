@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly
+namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operations
 {
     internal class SinglyInsert
     {
-        public static Node InsertAtFront(Node node, int data)
+        public static SinlglyNode InsertAtFront(SinlglyNode node, int data)
         {
-            Node updateNode = new(data)
+            SinlglyNode updateNode = new(data)
             {
                 next = node
             };
@@ -19,14 +19,14 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly
         }
 
 
-        public static Node InsertAtEnd(Node node, int data)
+        public static SinlglyNode InsertAtEnd(SinlglyNode node, int data)
         {
-            Node newNode = new(data);
+            SinlglyNode newNode = new(data);
             if (node == null)
             {
                 return newNode;
             }
-            Node lastNode = node;
+            SinlglyNode lastNode = node;
 
             while (lastNode.next != null)
             {
@@ -46,9 +46,9 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly
              */
         }
 
-        public static Node InsertAtGivenNode(Node node, int data, int key)
+        public static SinlglyNode InsertAtGivenNode(SinlglyNode node, int data, int key)
         {
-            Node currentNode = node;
+            SinlglyNode currentNode = node;
             while (currentNode != null)
             {
                 if (currentNode.data == key)
@@ -64,23 +64,23 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly
                 return node;
             }
 
-            Node newNode = new(data);
+            SinlglyNode newNode = new(data);
             newNode.next = currentNode.next;
             currentNode.next = newNode;
             return currentNode;
         }
 
-        public static Node InsertAtSpecificPosition(Node node, int position, int data)
+        public static SinlglyNode InsertAtSpecificPosition(SinlglyNode node, int position, int data)
         {
 
-            Node newNode = new(data);
+            SinlglyNode newNode = new(data);
             if (position == 1)
             {
                 newNode.next = node;
                 return newNode;
             }
 
-            Node currentNode = node;
+            SinlglyNode currentNode = node;
 
             for (int i = 1; i < position - 1 && currentNode.next != null; ++i)
             {

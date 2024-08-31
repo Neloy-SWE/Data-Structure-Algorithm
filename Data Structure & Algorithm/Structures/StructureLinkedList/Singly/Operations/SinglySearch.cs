@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly
+﻿namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operations
 {
     internal class SinglySearch
     {
-        public static void Get(Node node, int key)
+        public static void Get(SinlglyNode node, int key)
         {
             bool isValue = false;
             int i = 1;
@@ -18,7 +11,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly
                 Console.WriteLine("Empty linked list");
             }
 
-            Node currentNode = node;
+            SinlglyNode currentNode = node!;
 
             while (currentNode != null)
             {

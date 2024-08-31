@@ -9,15 +9,15 @@ namespace Data_Structure___Algorithm.Structures.StructureArray
     {
         // declaration of array:
 
-        int[] arr1;
-        char[] arr2;
-        double[] arr3;
+        int[]? arr1;
+        char[]? arr2;
+        double[]? arr3;
 
 
         // declarration and initialization:
         int[] arr4 = [1, 2, 3, 4,];
 
-
+         
 
         // fixed size array:
         int[] arr5 = new int[5]; // here we have define the size: 5

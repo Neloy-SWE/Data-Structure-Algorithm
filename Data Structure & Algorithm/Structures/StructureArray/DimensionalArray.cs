@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Data_Structure___Algorithm.Structures.StructureArray
+﻿namespace Data_Structure___Algorithm.Structures.StructureArray
 {
     // basis of dimensions
     // you can find 1D array in BasicArray class
@@ -12,7 +6,7 @@ namespace Data_Structure___Algorithm.Structures.StructureArray
     {
         // 2D:
         // declare
-        int[,] arr1;
+        int[,]? arr1;
 
         void Initialize()
         {
@@ -24,7 +18,7 @@ namespace Data_Structure___Algorithm.Structures.StructureArray
             Initialize();
             Console.WriteLine("Print 2D array");
 
-            for (int i = 0; i < arr1.GetLength(0); i++)
+            for (int i = 0; i < arr1!.GetLength(0); i++)
             {
 
                 for (int j = 0; j < arr1.GetLength(1); j++)

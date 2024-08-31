@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly
+namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operations
 {
     internal class SinglyDelete
     {
-        public static Node DeleteAtFront(Node node)
+        public static SinlglyNode DeleteAtFront(SinlglyNode node)
         {
             if (node == null)
             {
@@ -18,13 +18,13 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly
 
         }
 
-        public static Node DeleteAtEnd(Node node)
+        public static SinlglyNode DeleteAtEnd(SinlglyNode node)
         {
             if (node == null) { return null!; }
 
             if (node.next == null) { return null!; }
 
-            Node secondLastNode = node;
+            SinlglyNode secondLastNode = node;
 
             while (secondLastNode.next.next != null)
             {
@@ -36,20 +36,20 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Singly
 
         }
 
-        public static Node DeleteAtPostion(Node node, int position)
+        public static SinlglyNode DeleteAtPostion(SinlglyNode node, int position)
         {
             if (node == null)
             {
                 return node!;
             }
-            Node temporaryNode = node;
+            SinlglyNode temporaryNode = node;
 
             if (position == 1)
             {
                 return node.next;
             }
 
-            Node previousNode = null!;
+            SinlglyNode previousNode = null!;
             for (int i = 1; i < position && temporaryNode != null; i++)
             {
                 previousNode = temporaryNode;

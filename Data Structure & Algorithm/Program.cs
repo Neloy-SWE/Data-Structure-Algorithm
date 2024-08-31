@@ -2,6 +2,7 @@
 using Data_Structure___Algorithm.Structures.StructureArray;
 using Data_Structure___Algorithm.Structures.StructureLinkedList;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
+using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operations;
 
 /// array
 //BasicArray basicArray = new();
@@ -34,7 +35,7 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
 //ShowLinkedList.ShowSingly(head);
 
 //Node head2 = null;
-Node head2 = new(10);
+SinlglyNode head2 = new(10);
 // insert at end:
 head2 = SinglyInsert.InsertAtEnd(node: head2, data: 5);
 head2 = SinglyInsert.InsertAtEnd(node: head2, data: 6);

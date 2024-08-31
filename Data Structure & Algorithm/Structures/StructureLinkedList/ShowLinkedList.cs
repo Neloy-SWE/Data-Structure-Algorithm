@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
 
 namespace Data_Structure___Algorithm.Structures.StructureLinkedList
 {
@@ -15,12 +16,12 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList
             Console.WriteLine("\n\n" + message);
         }
 
-        public static void ShowSingly(Node node, string message)
+        public static void ShowSingly(SinlglyNode node, string message)
         {
             //new ShowLinkedList().ShowMessage(message);
             ShowMessage(message);
 
-            Node currentNode = node;
+            SinlglyNode currentNode = node;
             while (currentNode != null)
             {
                 Console.Write(currentNode.data + " ");
