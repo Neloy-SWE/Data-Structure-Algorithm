@@ -31,17 +31,20 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList
             Console.WriteLine();
         }
 
-        public static void ShowDoubly(DoublyNode node, string message) {
+        public static void ShowDoubly(DoublyNode node, string message)
+        {
 
             ShowMessage(message);
 
             DoublyNode firstNode = node;
             DoublyNode lastNode = null!;
             Console.WriteLine("Doubly linked list forward:");
-            while (firstNode != null) {
+            while (firstNode != null)
+            {
                 Console.Write(firstNode.data + " ");
-                if (firstNode.next == null) { 
-                lastNode = firstNode;
+                if (firstNode.next == null)
+                {
+                    lastNode = firstNode;
                 }
                 firstNode = firstNode.next!;
             }

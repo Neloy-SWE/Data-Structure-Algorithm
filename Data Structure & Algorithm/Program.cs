@@ -2,6 +2,7 @@
 using Data_Structure___Algorithm.Structures.StructureArray;
 using Data_Structure___Algorithm.Structures.StructureLinkedList;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
+using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Operations;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operations;
 
@@ -77,5 +78,9 @@ node2.next = node3;
 node3.previous = node2;
 node2.previous = node1;
 
-ShowLinkedList.ShowDoubly(node: node1, "Show doubly linked list forward and backward");
-
+//ShowLinkedList.ShowDoubly(node: node1, "Show doubly linked list forward and backward");
+// insert at front:
+node1 = DoublyInsert.InsertAtFront(node: node1, 4);
+ShowLinkedList.ShowDoubly(node: node1, "After insert at front:");
+node1 = DoublyInsert.InsertAtEnd(node: node1, 5);
+ShowLinkedList.ShowDoubly(node: node1, "After insert at end:");
