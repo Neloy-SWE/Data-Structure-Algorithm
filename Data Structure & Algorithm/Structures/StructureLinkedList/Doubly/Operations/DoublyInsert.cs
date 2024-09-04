@@ -49,5 +49,43 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Opera
             return node;
 
         }
+
+        public static DoublyNode InsertAtSpecificPosition(DoublyNode node, int position, int data)
+        {
+            DoublyNode newNode = new(data);
+            if (position == 1)
+            {
+                newNode.next = node;
+                if (node != null)
+                {
+                    node.previous = newNode;
+
+                }
+                return newNode;
+            }
+
+            DoublyNode currentNode = node;
+
+            for (int i = 1; i < position - 1 && currentNode != null; i++)
+            {
+                currentNode = currentNode.next;
+            }
+
+            if (currentNode == null)
+            {
+                Console.WriteLine("Position is out of bounds.");
+                return node!;
+            }
+
+            newNode.previous = currentNode;
+            newNode.next = currentNode.next;
+            currentNode.next = newNode;
+
+            if (newNode.next != null)
+            {
+                newNode.next.previous = newNode;
+            }
+            return node!;
+        }
     }
 }

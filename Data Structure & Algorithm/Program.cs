@@ -81,6 +81,8 @@ node2.previous = node1;
 //ShowLinkedList.ShowDoubly(node: node1, "Show doubly linked list forward and backward");
 // insert at front:
 node1 = DoublyInsert.InsertAtFront(node: node1, 4);
-ShowLinkedList.ShowDoubly(node: node1, "After insert at front:");
+//ShowLinkedList.ShowDoubly(node: node1, "After insert at front:");
 node1 = DoublyInsert.InsertAtEnd(node: node1, 5);
-ShowLinkedList.ShowDoubly(node: node1, "After insert at end:");
+//ShowLinkedList.ShowDoubly(node: node1, "After insert at end:");
+node1 = DoublyInsert.InsertAtSpecificPosition(node: node1, position: 3, 6);
+ShowLinkedList.ShowDoubly(node: node1, "After insert at position:");
