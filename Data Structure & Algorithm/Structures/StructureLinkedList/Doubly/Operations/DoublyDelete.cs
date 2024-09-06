@@ -29,5 +29,28 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Opera
             }
 
         }
+
+        public static DoublyNode DeleteAtEnd(DoublyNode node)
+        {
+            if (node == null || node.next == null)
+            {
+                return null!;
+            }
+
+            DoublyNode currentNode = node;
+
+            while (currentNode.next != null)
+            {
+                currentNode = currentNode.next;
+            }
+
+            if (currentNode.previous != null)
+            {
+                currentNode.previous.next = null!;
+            }
+
+            currentNode = null!;
+            return node;
+        }
     }
 }
