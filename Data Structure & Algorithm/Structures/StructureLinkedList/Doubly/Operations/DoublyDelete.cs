@@ -121,9 +121,9 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Opera
             }
 
             DoublyNode currentNode = node;
-            for (int i = 1; currentNode != null && i < position; i++) 
-            { 
-            currentNode = currentNode.next;
+            for (int i = 1; currentNode != null && i < position; i++)
+            {
+                currentNode = currentNode.next;
             }
 
             if (currentNode == null)

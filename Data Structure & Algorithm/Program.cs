@@ -132,3 +132,11 @@ ShowLinkedList.ShowDoubly(node: node1, "After delete before a given node 3:");
 // delete at a specific position:
 node1 = DoublyDelete.DeleteAtSpecificPosition(node: node1, position: 2);
 ShowLinkedList.ShowDoubly(node: node1, "After delete at a specific position 2:");
+
+// search:
+DoublySearch.get(node: node1, position: 3);
+node1 = DoublyInsert.InsertAtEnd(node: node1, 20);
+node1 = DoublyInsert.InsertAtEnd(node: node1, 30);
+node1 = DoublyInsert.InsertAtEnd(node: node1, 40);
+ShowLinkedList.ShowDoubly(node: node1, "After adding some element");
+DoublySearch.get(node: node1, position: 3);
