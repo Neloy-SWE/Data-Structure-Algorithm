@@ -111,5 +111,40 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Opera
             }
             return node;
         }
+
+        public static DoublyNode DeleteAtSpecificPosition(DoublyNode node, int position)
+        {
+            if (node == null)
+            {
+                Console.WriteLine("Node is null");
+                return null!;
+            }
+
+            DoublyNode currentNode = node;
+            for (int i = 1; currentNode != null && i < position; i++) 
+            { 
+            currentNode = currentNode.next;
+            }
+
+            if (currentNode == null)
+            {
+                return node;
+            }
+
+            if (currentNode.previous != null)
+            {
+                currentNode.previous.next = currentNode.next;
+            }
+            if (currentNode.next != null)
+            {
+                currentNode.next.previous = currentNode.previous!;
+            }
+            if (node == currentNode)
+            {
+                node = currentNode.next!;
+            }
+
+            return node;
+        }
     }
 }

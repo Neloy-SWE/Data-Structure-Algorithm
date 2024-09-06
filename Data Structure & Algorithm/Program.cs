@@ -128,3 +128,7 @@ ShowLinkedList.ShowDoubly(node: node1, "After delete after a given node 6:");
 // delete before a given node:
 node1 = DoublyDelete.DeleteBeforeAGivenNode(node: node1, key: 3);
 ShowLinkedList.ShowDoubly(node: node1, "After delete before a given node 3:");
+
+// delete at a specific position:
+node1 = DoublyDelete.DeleteAtSpecificPosition(node: node1, position: 2);
+ShowLinkedList.ShowDoubly(node: node1, "After delete at a specific position 2:");
