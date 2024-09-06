@@ -86,3 +86,5 @@ node1 = DoublyInsert.InsertAtEnd(node: node1, 5);
 //ShowLinkedList.ShowDoubly(node: node1, "After insert at end:");
 node1 = DoublyInsert.InsertAtSpecificPosition(node: node1, position: 3, 6);
 ShowLinkedList.ShowDoubly(node: node1, "After insert at position:");
+node1 = DoublyDelete.DeleteAtFront(node: node1);
+ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");

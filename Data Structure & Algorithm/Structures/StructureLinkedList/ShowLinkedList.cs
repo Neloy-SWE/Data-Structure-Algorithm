@@ -58,10 +58,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList
                 Console.Write(lastNode.data + " ");
                 lastNode = lastNode.previous;
             }
-
-
-
-
+            Console.WriteLine();
         }
     }
 }
