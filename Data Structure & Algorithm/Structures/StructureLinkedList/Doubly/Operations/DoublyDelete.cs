@@ -17,9 +17,16 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Opera
             }
             DoublyNode currentNode = node;
 
-            currentNode = currentNode.next;
-            currentNode.previous = null!;
-            return currentNode;
+            if (currentNode.next != null)
+            {
+                currentNode = currentNode.next;
+                currentNode.previous = null!;
+                return currentNode;
+            }
+            else
+            {
+                return null!;
+            }
 
         }
     }
