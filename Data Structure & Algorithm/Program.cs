@@ -68,75 +68,76 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operation
 
 // doubly linked list:
 
-DoublyNode node1 = new(data: 1);
-DoublyNode node2 = new(data: 2);
-DoublyNode node3 = new(data: 3);
+//DoublyNode node1 = new(data: 1);
+//DoublyNode node2 = new(data: 2);
+//DoublyNode node3 = new(data: 3);
 
-node1.next = node2;
-node2.next = node3;
+//node1.next = node2;
+//node2.next = node3;
 
-node3.previous = node2;
-node2.previous = node1;
+//node3.previous = node2;
+//node2.previous = node1;
 
-//ShowLinkedList.ShowDoubly(node: node1, "Show doubly linked list forward and backward");
-// insert at front:
-node1 = DoublyInsert.InsertAtFront(node: node1, 4);
-//ShowLinkedList.ShowDoubly(node: node1, "After insert at front:");
+////ShowLinkedList.ShowDoubly(node: node1, "Show doubly linked list forward and backward");
+//// insert at front:
+//node1 = DoublyInsert.InsertAtFront(node: node1, 4);
+////ShowLinkedList.ShowDoubly(node: node1, "After insert at front:");
 
-// insert at end:
-node1 = DoublyInsert.InsertAtEnd(node: node1, 5);
-//ShowLinkedList.ShowDoubly(node: node1, "After insert at end:");
+//// insert at end:
+//node1 = DoublyInsert.InsertAtEnd(node: node1, 5);
+////ShowLinkedList.ShowDoubly(node: node1, "After insert at end:");
 
-// insert at specific position:
-node1 = DoublyInsert.InsertAtSpecificPosition(node: node1, position: 3, 6);
-ShowLinkedList.ShowDoubly(node: node1, "After insert at position:");
+//// insert at specific position:
+//node1 = DoublyInsert.InsertAtSpecificPosition(node: node1, position: 3, 6);
+//ShowLinkedList.ShowDoubly(node: node1, "After insert at position:");
 
-// delete at fornt:
-node1 = DoublyDelete.DeleteAtFront(node: node1);
-ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
+//// delete at fornt:
 //node1 = DoublyDelete.DeleteAtFront(node: node1);
 //ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
-//node1 = DoublyDelete.DeleteAtFront(node: node1);
-//ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
-//node1 = DoublyDelete.DeleteAtFront(node: node1);
-//ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
-//node1 = DoublyDelete.DeleteAtFront(node: node1);
-//ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
-//node1 = DoublyDelete.DeleteAtFront(node: node1);
-//ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
-//node1 = DoublyDelete.DeleteAtFront(node: node1);
-//ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
+////node1 = DoublyDelete.DeleteAtFront(node: node1);
+////ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
+////node1 = DoublyDelete.DeleteAtFront(node: node1);
+////ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
+////node1 = DoublyDelete.DeleteAtFront(node: node1);
+////ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
+////node1 = DoublyDelete.DeleteAtFront(node: node1);
+////ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
+////node1 = DoublyDelete.DeleteAtFront(node: node1);
+////ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
+////node1 = DoublyDelete.DeleteAtFront(node: node1);
+////ShowLinkedList.ShowDoubly(node: node1, "After delete at front:");
 
-// delete at end:
-node1 = DoublyDelete.DeleteAtEnd(node: node1);
-ShowLinkedList.ShowDoubly(node: node1, "After delete at end:");
+//// delete at end:
 //node1 = DoublyDelete.DeleteAtEnd(node: node1);
 //ShowLinkedList.ShowDoubly(node: node1, "After delete at end:");
-//node1 = DoublyDelete.DeleteAtEnd(node: node1);
-//ShowLinkedList.ShowDoubly(node: node1, "After delete at end:");
-//node1 = DoublyDelete.DeleteAtEnd(node: node1);
-//ShowLinkedList.ShowDoubly(node: node1, "After delete at end:");
-//node1 = DoublyDelete.DeleteAtEnd(node: node1);
-//ShowLinkedList.ShowDoubly(node: node1, "After delete at end:");
-//node1 = DoublyDelete.DeleteAtEnd(node: node1);
-//ShowLinkedList.ShowDoubly(node: node1, "After delete at end:");
+////node1 = DoublyDelete.DeleteAtEnd(node: node1);
+////ShowLinkedList.ShowDoubly(node: node1, "After delete at end:");
+////node1 = DoublyDelete.DeleteAtEnd(node: node1);
+////ShowLinkedList.ShowDoubly(node: node1, "After delete at end:");
+////node1 = DoublyDelete.DeleteAtEnd(node: node1);
+////ShowLinkedList.ShowDoubly(node: node1, "After delete at end:");
+////node1 = DoublyDelete.DeleteAtEnd(node: node1);
+////ShowLinkedList.ShowDoubly(node: node1, "After delete at end:");
+////node1 = DoublyDelete.DeleteAtEnd(node: node1);
+////ShowLinkedList.ShowDoubly(node: node1, "After delete at end:");
 
-// delete after a given node:
-node1 = DoublyDelete.DeleteAfterAGivenNode(node: node1, key: 6);
-ShowLinkedList.ShowDoubly(node: node1, "After delete after a given node 6:");
+//// delete after a given node:
+//node1 = DoublyDelete.DeleteAfterAGivenNode(node: node1, key: 6);
+//ShowLinkedList.ShowDoubly(node: node1, "After delete after a given node 6:");
 
-// delete before a given node:
-node1 = DoublyDelete.DeleteBeforeAGivenNode(node: node1, key: 3);
-ShowLinkedList.ShowDoubly(node: node1, "After delete before a given node 3:");
+//// delete before a given node:
+//node1 = DoublyDelete.DeleteBeforeAGivenNode(node: node1, key: 3);
+//ShowLinkedList.ShowDoubly(node: node1, "After delete before a given node 3:");
 
-// delete at a specific position:
-node1 = DoublyDelete.DeleteAtSpecificPosition(node: node1, position: 2);
-ShowLinkedList.ShowDoubly(node: node1, "After delete at a specific position 2:");
+//// delete at a specific position:
+//node1 = DoublyDelete.DeleteAtSpecificPosition(node: node1, position: 2);
+//ShowLinkedList.ShowDoubly(node: node1, "After delete at a specific position 2:");
 
-// search:
-DoublySearch.get(node: node1, position: 3);
-node1 = DoublyInsert.InsertAtEnd(node: node1, 20);
-node1 = DoublyInsert.InsertAtEnd(node: node1, 30);
-node1 = DoublyInsert.InsertAtEnd(node: node1, 40);
-ShowLinkedList.ShowDoubly(node: node1, "After adding some element");
-DoublySearch.get(node: node1, position: 3);
+//// search:
+//DoublySearch.get(node: node1, position: 3);
+//node1 = DoublyInsert.InsertAtEnd(node: node1, 20);
+//node1 = DoublyInsert.InsertAtEnd(node: node1, 30);
+//node1 = DoublyInsert.InsertAtEnd(node: node1, 40);
+//ShowLinkedList.ShowDoubly(node: node1, "After adding some element");
+//DoublySearch.get(node: node1, position: 3);
+
