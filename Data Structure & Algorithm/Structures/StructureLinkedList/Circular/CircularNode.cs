@@ -8,8 +8,8 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Circular
 {
     internal class CircularNode
     {
-        int data;
-        CircularNode next;
+        public int data;
+        public CircularNode next;
 
         public CircularNode(int data)
         {
