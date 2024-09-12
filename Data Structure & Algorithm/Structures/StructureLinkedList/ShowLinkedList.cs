@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Data_Structure___Algorithm.Structures.StructureLinkedList.Circular;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
 
@@ -57,6 +58,27 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList
             {
                 Console.Write(lastNode.data + " ");
                 lastNode = lastNode.previous;
+            }
+            Console.WriteLine();
+        }
+
+        public static void ShowCircular(CircularNode node, string message) {
+            ShowMessage(message);
+            if (node == null)
+            {
+                Console.WriteLine("Circular linked list is empty");
+                return;
+            }
+
+            CircularNode head = node.next;
+            while (true)
+            {
+                Console.Write(head.data + " ");
+                head = head.next;
+                if (head == node.next)
+                {
+                    break;
+                }
             }
             Console.WriteLine();
         }

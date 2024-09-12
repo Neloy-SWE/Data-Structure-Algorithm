@@ -1,6 +1,7 @@
 ﻿
 using Data_Structure___Algorithm.Structures.StructureArray;
 using Data_Structure___Algorithm.Structures.StructureLinkedList;
+using Data_Structure___Algorithm.Structures.StructureLinkedList.Circular;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Operations;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
@@ -141,3 +142,13 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operation
 //ShowLinkedList.ShowDoubly(node: node1, "After adding some element");
 //DoublySearch.get(node: node1, position: 3);
 
+
+// circular linked list:
+
+CircularNode node = new(1);
+node.next = new(2);
+node.next.next = new(3);
+CircularNode last = node.next.next;
+last.next = node;
+
+ShowLinkedList.ShowCircular(last, "Print circular linked list");
