@@ -15,7 +15,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList
         // void ShowMessage(string message)
         static void ShowMessage(string message)
         {
-            Console.WriteLine("\n\n" + message);
+            Console.WriteLine(message+"\n");
         }
 
         public static void ShowSingly(SinlglyNode node, string message)
@@ -29,6 +29,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList
                 Console.Write(currentNode.data + " ");
                 currentNode = currentNode.next;
             }
+            Console.WriteLine();
             Console.WriteLine();
         }
 
@@ -60,6 +61,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList
                 lastNode = lastNode.previous;
             }
             Console.WriteLine();
+            Console.WriteLine();
         }
 
         public static void ShowCircular(CircularNode node, string message)
@@ -81,6 +83,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList
                     break;
                 }
             }
+            Console.WriteLine();
             Console.WriteLine();
         }
     }

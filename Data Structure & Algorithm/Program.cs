@@ -1,6 +1,7 @@
 ﻿using Data_Structure___Algorithm.Structures.StructureArray;
 using Data_Structure___Algorithm.Structures.StructureLinkedList;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Circular;
+using Data_Structure___Algorithm.Structures.StructureLinkedList.Circular.OperationCircularLinkedList;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Operations;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
@@ -143,10 +144,13 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operation
 
 // circular linked list:
 
-CircularNode node = new(1);
-node.next = new(2);
-node.next.next = new(3);
-CircularNode last = node.next.next;
-last.next = node;
+CircularNode node1 = new(1);
+node1.next = new(2);
+node1.next.next = new(3);
+CircularNode last1 = node1.next.next;
+last1.next = node1;
 
-ShowLinkedList.ShowCircular(last, "Print circular linked list");
+ShowLinkedList.ShowCircular(last1, "Print circular linked list");
+last1 = CircularInsert.InsertInEmptyList(last1,1);
+CircularNode node2 = null!;
+node2 = CircularInsert.InsertInEmptyList(node2, 1);
