@@ -160,3 +160,6 @@ node2 = CircularInsert.InsertInEmptyList(node2, 2);
 // insert in at front:
 node2 = CircularInsert.InsertArFront(node2, 1);
 node2 = CircularInsert.InsertInEmptyList(node2, 2);
+
+// insert at end:
+node2 = CircularInsert.InsertAtEnd(node2, 3);

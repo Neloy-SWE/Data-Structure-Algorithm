@@ -42,5 +42,30 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Circular.Ope
             ShowLinkedList.ShowCircular(node, "Inserted at front:");
             return node;
         }
+
+        public static CircularNode InsertAtEnd(CircularNode node, int data)
+        {
+            Console.WriteLine("Insert at end:\n");
+            CircularNode newNode = new(data);
+            if (node == null)
+            {
+                node = newNode;
+                newNode.next = newNode;
+            }
+            else
+            {
+                newNode.next = node.next;
+                node.next = newNode;
+                /* here value of newNode: 3->1->2->1->2....
+                 * so by inserting newNode to the node.next (where node: 2->1->2->1...)
+                 * we change next value of 2 to 3->1->2.
+                 * so now if we traverse newNode: 3->1->2 here last value: 2 refer 3.
+                 * that is how insertion at end complete.
+                 */
+                node = newNode;
+            }
+            ShowLinkedList.ShowCircular(node, "Inserted at end:");
+            return node;
+        }
     }
 }
