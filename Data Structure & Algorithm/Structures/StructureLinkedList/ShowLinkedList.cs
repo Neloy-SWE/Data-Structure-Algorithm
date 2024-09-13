@@ -62,7 +62,8 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList
             Console.WriteLine();
         }
 
-        public static void ShowCircular(CircularNode node, string message) {
+        public static void ShowCircular(CircularNode node, string message)
+        {
             ShowMessage(message);
             if (node == null)
             {

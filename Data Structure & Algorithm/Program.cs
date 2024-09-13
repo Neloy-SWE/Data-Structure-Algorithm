@@ -1,5 +1,4 @@
-﻿
-using Data_Structure___Algorithm.Structures.StructureArray;
+﻿using Data_Structure___Algorithm.Structures.StructureArray;
 using Data_Structure___Algorithm.Structures.StructureLinkedList;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Circular;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
@@ -24,20 +23,19 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operation
 
 /// linked list
 
-// singly linked list:
-
-//Node head = new(1);
+//singly linked list:
+//SinlglyNode head = new(1);
 //head.next = new(2);
 //head.next.next = new(3);
 
-//ShowLinkedList.ShowSingly(head);
+//ShowLinkedList.ShowSingly(head, "Linked list traverse.");
 
 //// insert at front:
 //head = SinglyInsert.InsertAtFront(node: head, data: 0);
 //// print after insert:
-//ShowLinkedList.ShowSingly(head);
+//ShowLinkedList.ShowSingly(head, "After insert at front");
 
-//Node head2 = null;
+////Node head2 = null;
 //SinlglyNode head2 = new(10);
 //// insert at end:
 //head2 = SinglyInsert.InsertAtEnd(node: head2, data: 5);
