@@ -10,7 +10,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Circular.Ope
     {
         public static CircularNode InsertInEmptyList(CircularNode node, int data)
         {
-           
+
             Console.WriteLine("Insert in empty list:\n");
             if (node != null)
             {
@@ -20,10 +20,26 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Circular.Ope
             CircularNode newNode = new(data);
 
             newNode.next = newNode;
-            //ShowLinkedList.ShowCircular(newNode, "Insert in empty list: node2 method test with empty list");
-            //return newNode;
+            //ShowLinkedList.ShowCircular(newNode, "After insert the empty list");
+            //return newNode; // returning newNode will create infinity loop.
             node = newNode;
-            ShowLinkedList.ShowCircular(node, "After insert the empty list");
+            ShowLinkedList.ShowCircular(node, "After insert the empty list:");
+            return node;
+        }
+
+        public static CircularNode InsertArFront(CircularNode node, int data)
+        {
+            Console.WriteLine("Insert at front:\n");
+            CircularNode newNode = new(data);
+            if (node == null)
+            {
+                newNode.next = newNode;
+                return newNode;
+            }
+
+            newNode.next = node.next;
+            node.next = newNode;
+            ShowLinkedList.ShowCircular(node, "Inserted at front:");
             return node;
         }
     }

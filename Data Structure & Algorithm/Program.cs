@@ -144,13 +144,19 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operation
 
 // circular linked list:
 
-CircularNode node1 = new(1);
-node1.next = new(2);
-node1.next.next = new(3);
-CircularNode last1 = node1.next.next;
-last1.next = node1;
+//CircularNode node1 = new(1);
+//node1.next = new(2);
+//node1.next.next = new(3);
+//CircularNode last1 = node1.next.next;
+//last1.next = node1;
 
-ShowLinkedList.ShowCircular(last1, "Print circular linked list");
-last1 = CircularInsert.InsertInEmptyList(last1,1);
+//ShowLinkedList.ShowCircular(last1, "Print circular linked list");
+//last1 = CircularInsert.InsertInEmptyList(last1,1);
 CircularNode node2 = null!;
-node2 = CircularInsert.InsertInEmptyList(node2, 1);
+
+// insert in an empty list:
+node2 = CircularInsert.InsertInEmptyList(node2, 2);
+
+// insert in at front:
+node2 = CircularInsert.InsertArFront(node2, 1);
+node2 = CircularInsert.InsertInEmptyList(node2, 2);
