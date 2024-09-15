@@ -166,3 +166,6 @@ node2 = CircularInsert.InsertAtEnd(node2, 3);
 
 // insert at specific position:
 node2 = CircularInsert.InsertAtSpecificPosition(node2, 4, 2);
+
+// delete at front:
+node2 = CircularDelete.DeleteAtFront(node2);

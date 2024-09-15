@@ -99,7 +99,6 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Circular.Ope
 
             for (int i = 1; i < position - 1; ++i)
             {
-                Console.WriteLine(i);
                 currentNode = currentNode.next;
                 if (currentNode == node.next)
                 {
