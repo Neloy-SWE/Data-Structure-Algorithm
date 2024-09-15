@@ -163,3 +163,6 @@ node2 = CircularInsert.InsertInEmptyList(node2, 2);
 
 // insert at end:
 node2 = CircularInsert.InsertAtEnd(node2, 3);
+
+// insert at specific position:
+node2 = CircularInsert.InsertAtSpecificPosition(node2, 4, 2);

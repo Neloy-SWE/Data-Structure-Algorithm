@@ -67,5 +67,55 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Circular.Ope
             ShowLinkedList.ShowCircular(node, "Inserted at end:");
             return node;
         }
+
+        public static CircularNode InsertAtSpecificPosition(CircularNode node, int data, int position)
+
+        {
+            Console.WriteLine("Insert at specific position:\n");
+            if (node == null)
+            {
+                if (position != 1)
+                {
+                    Console.WriteLine("Invalid position!\n");
+                    return node!;
+                }
+                CircularNode newNode1 = new(data);
+                node = newNode1;
+                node.next = node;
+                ShowLinkedList.ShowCircular(node, "Inserted at specific position:");
+                return node;
+            }
+
+            CircularNode newNode2 = new(data);
+            CircularNode currentNode = node.next;
+
+            if (position == 1)
+            {
+                newNode2.next = currentNode;
+                node.next = newNode2;
+                ShowLinkedList.ShowCircular(node, "Inserted at specific position:");
+                return node;
+            }
+
+            for (int i = 1; i < position - 1; ++i)
+            {
+                Console.WriteLine(i);
+                currentNode = currentNode.next;
+                if (currentNode == node.next)
+                {
+                    Console.WriteLine("Invalid position!\n");
+                    return node;
+                }
+            }
+            newNode2.next = currentNode.next;
+            currentNode.next = newNode2;
+
+            if (currentNode == node)
+            {
+                node = newNode2;
+            }
+            ShowLinkedList.ShowCircular(node, "Inserted at specific position:");
+            return node;
+        }
     }
 }
