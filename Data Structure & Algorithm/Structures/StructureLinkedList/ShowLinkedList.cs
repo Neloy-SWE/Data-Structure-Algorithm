@@ -69,7 +69,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList
             ShowMessage(message);
             if (node == null)
             {
-                Console.WriteLine("Circular linked list is empty");
+                Console.WriteLine("Circular linked list is empty\n");
                 return;
             }
 

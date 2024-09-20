@@ -6,6 +6,7 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Operations;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operations;
+using System.Xml.Linq;
 
 /// array
 //BasicArray basicArray = new();
@@ -169,3 +170,12 @@ node2 = CircularInsert.InsertAtSpecificPosition(node2, 4, 2);
 
 // delete at front:
 node2 = CircularDelete.DeleteAtFront(node2);
+node2 = CircularDelete.DeleteAtFront(node2);
+node2 = CircularDelete.DeleteAtFront(node2);
+//node2 = CircularDelete.DeleteAtFront(node2);
+//node2 = CircularDelete.DeleteAtFront(node2);
+//node2 = CircularDelete.DeleteAtFront(node2);
+
+//CircularNode nullCheckNode = CircularDelete.DeleteAtFront(node2);
+//ShowLinkedList.ShowCircular(nullCheckNode, "null check node");
+//ShowLinkedList.ShowCircular(node2, "node2 check");

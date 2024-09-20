@@ -16,23 +16,23 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Circular.Ope
                 Console.WriteLine("Linked list is empty!\n");
                 return null!;
             }
+
             CircularNode previousNode = node;
-            CircularNode nextNode = node;
+            CircularNode tempNode = previousNode.next.next;
 
             if (previousNode.next == previousNode)
             {
-                node = null!;
+                Console.WriteLine("You removed the last element!\n");
+                node = null!; 
+                // though we initialize null to node,
+                // but the node we sent to the paramenter for main function,
+                // will be same if we do not re-initialize it in main function.
                 return null!;
             }
 
-            while (previousNode.next != node)
-            {
-                previousNode = previousNode.next;
-                nextNode = previousNode.next;
-            }
+            previousNode.next = tempNode;
+            node = previousNode;
 
-            previousNode.next = nextNode.next;
-            node = previousNode.next;
             ShowLinkedList.ShowCircular(node, "Deleted at front:");
             return node;
         }
