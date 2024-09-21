@@ -169,9 +169,9 @@ node2 = CircularInsert.InsertAtEnd(node2, 3);
 node2 = CircularInsert.InsertAtSpecificPosition(node2, 4, 2);
 
 // delete at front:
-node2 = CircularDelete.DeleteAtFront(node2);
-node2 = CircularDelete.DeleteAtFront(node2);
-node2 = CircularDelete.DeleteAtFront(node2);
+//node2 = CircularDelete.DeleteAtFront(node2);
+//node2 = CircularDelete.DeleteAtFront(node2);
+//node2 = CircularDelete.DeleteAtFront(node2);
 //node2 = CircularDelete.DeleteAtFront(node2);
 //node2 = CircularDelete.DeleteAtFront(node2);
 //node2 = CircularDelete.DeleteAtFront(node2);
@@ -179,3 +179,11 @@ node2 = CircularDelete.DeleteAtFront(node2);
 //CircularNode nullCheckNode = CircularDelete.DeleteAtFront(node2);
 //ShowLinkedList.ShowCircular(nullCheckNode, "null check node");
 //ShowLinkedList.ShowCircular(node2, "node2 check");
+
+// delete at end:
+node2 = CircularDelete.DeleteAtEnd(node2);
+node2 = CircularDelete.DeleteAtEnd(node2);
+node2 = CircularDelete.DeleteAtEnd(node2);
+node2 = CircularDelete.DeleteAtEnd(node2);
+node2 = CircularDelete.DeleteAtEnd(node2);
+node2 = CircularDelete.DeleteAtEnd(node2);
