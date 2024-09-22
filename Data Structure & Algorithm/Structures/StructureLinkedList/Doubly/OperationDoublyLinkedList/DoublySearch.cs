@@ -8,7 +8,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Opera
 {
     internal class DoublySearch
     {
-        public static void get(DoublyNode node, int position)
+        public static void Get(DoublyNode node, int position)
         {
             if (node == null)
             {

@@ -190,12 +190,19 @@ node2 = CircularInsert.InsertAtSpecificPosition(node2, 4, 2);
 
 // delete at specific position:
 //node2 = CircularDelete.DeleteAtSpecificPosition(node2, 4);
-node2 = CircularDelete.DeleteAtSpecificPosition(node2, 3);
-node2 = CircularDelete.DeleteAtSpecificPosition(node2, 1);
-node2 = CircularDelete.DeleteAtSpecificPosition(node2, 2);
-node2 = CircularDelete.DeleteAtSpecificPosition(node2, 2);
-node2 = CircularDelete.DeleteAtSpecificPosition(node2, 50);
-node2 = CircularDelete.DeleteAtSpecificPosition(node2, 1);
-node2 = CircularDelete.DeleteAtSpecificPosition(node2, 1);
-node2 = CircularDelete.DeleteAtSpecificPosition(node2, 5);
-node2 = CircularDelete.DeleteAtSpecificPosition(node2, 10);
+//node2 = CircularDelete.DeleteAtSpecificPosition(node2, 3);
+//node2 = CircularDelete.DeleteAtSpecificPosition(node2, 1);
+//node2 = CircularDelete.DeleteAtSpecificPosition(node2, 2);
+//node2 = CircularDelete.DeleteAtSpecificPosition(node2, 2);
+//node2 = CircularDelete.DeleteAtSpecificPosition(node2, 50);
+//node2 = CircularDelete.DeleteAtSpecificPosition(node2, 1);
+//node2 = CircularDelete.DeleteAtSpecificPosition(node2, 1);
+//node2 = CircularDelete.DeleteAtSpecificPosition(node2, 5);
+//node2 = CircularDelete.DeleteAtSpecificPosition(node2, 10);
+
+// seach based on position:
+CircularSearch.BasedOnPosition(node2, 1);
+CircularSearch.BasedOnPosition(node2, 2);
+CircularSearch.BasedOnPosition(node2, 3);
+CircularSearch.BasedOnPosition(node2, 4);
+CircularSearch.BasedOnPosition(node2, 5);
