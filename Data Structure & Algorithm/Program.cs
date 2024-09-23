@@ -168,6 +168,11 @@ node2 = CircularInsert.InsertAtEnd(node2, 3);
 // insert at specific position:
 node2 = CircularInsert.InsertAtSpecificPosition(node2, 4, 2);
 
+node2 = CircularInsert.InsertAtEnd(node2, 7);
+node2 = CircularInsert.InsertAtEnd(node2, 6);
+node2 = CircularInsert.InsertAtEnd(node2, 9);
+node2 = CircularInsert.InsertAtEnd(node2, 8);
+
 // delete at front:
 //node2 = CircularDelete.DeleteAtFront(node2);
 //node2 = CircularDelete.DeleteAtFront(node2);
@@ -200,9 +205,12 @@ node2 = CircularInsert.InsertAtSpecificPosition(node2, 4, 2);
 //node2 = CircularDelete.DeleteAtSpecificPosition(node2, 5);
 //node2 = CircularDelete.DeleteAtSpecificPosition(node2, 10);
 
-// seach based on position:
-CircularSearch.BasedOnPosition(node2, 1);
-CircularSearch.BasedOnPosition(node2, 2);
-CircularSearch.BasedOnPosition(node2, 3);
-CircularSearch.BasedOnPosition(node2, 4);
-CircularSearch.BasedOnPosition(node2, 5);
+// search based on position:
+//CircularSearch.BasedOnPosition(node2, 1);
+//CircularSearch.BasedOnPosition(node2, 2);
+//CircularSearch.BasedOnPosition(node2, 3);
+//CircularSearch.BasedOnPosition(node2, 4);
+//CircularSearch.BasedOnPosition(node2, 5);
+
+// search based on value:
+CircularSearch.BasedOnValue(node2, 10);

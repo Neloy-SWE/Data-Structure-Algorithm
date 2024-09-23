@@ -37,5 +37,43 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.Circular.Ope
                 Console.WriteLine("Out of index!\n");
             }
         }
+
+        public static void BasedOnValue(CircularNode node, int value)
+        {
+            Console.WriteLine($"Start searching based on value ({value}):\n");
+            if (node == null)
+            {
+                Console.WriteLine("Linked list is empty!\n");
+            }
+
+            CircularNode currentNode = node!.next;
+            int count = 1;
+            while (currentNode.next != node)
+            {
+                if (currentNode.data == value)
+                {
+                    Console.WriteLine($"data {currentNode.data} is found at position: {count}!\n");
+                    return;
+                }
+                currentNode = currentNode.next;
+                count++;
+            }
+            if (currentNode.next == node && currentNode.data == value)
+            {
+                Console.WriteLine($"data {currentNode.data} is found at position: {count}!\n");
+            }
+
+            else if (currentNode.next.data == value)
+            {
+                //currentNode == node && currentNode.data == value
+                //currentNode = currentNode.next;
+                Console.WriteLine($"data {currentNode.next.data} is found at position: {count + 1}!\n");
+            }
+            else
+            {
+                Console.WriteLine("The value is not found!\n");
+            }
+
+        }
     }
 }
