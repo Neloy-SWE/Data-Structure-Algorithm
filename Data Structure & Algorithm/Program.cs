@@ -2,6 +2,8 @@
 using Data_Structure___Algorithm.Structures.StructureLinkedList;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Circular;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Circular.OperationCircularLinkedList;
+using Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoubly;
+using Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoubly.OperationCircularDoublyLinkedList;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Operations;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
@@ -153,25 +155,25 @@ using System.Xml.Linq;
 
 //ShowLinkedList.ShowCircular(last1, "Print circular linked list");
 //last1 = CircularInsert.InsertInEmptyList(last1,1);
-CircularNode node2 = null!;
+//CircularNode node2 = null!;
 
-// insert in an empty list:
-node2 = CircularInsert.InsertInEmptyList(node2, 2);
+//// insert in an empty list:
+//node2 = CircularInsert.InsertInEmptyList(node2, 2);
 
-// insert in at front:
-node2 = CircularInsert.InsertArFront(node2, 1);
-node2 = CircularInsert.InsertInEmptyList(node2, 2);
+//// insert in at front:
+//node2 = CircularInsert.InsertArFront(node2, 1);
+//node2 = CircularInsert.InsertInEmptyList(node2, 2);
 
-// insert at end:
-node2 = CircularInsert.InsertAtEnd(node2, 3);
+//// insert at end:
+//node2 = CircularInsert.InsertAtEnd(node2, 3);
 
-// insert at specific position:
-node2 = CircularInsert.InsertAtSpecificPosition(node2, 4, 2);
+//// insert at specific position:
+//node2 = CircularInsert.InsertAtSpecificPosition(node2, 4, 2);
 
-node2 = CircularInsert.InsertAtEnd(node2, 7);
-node2 = CircularInsert.InsertAtEnd(node2, 6);
-node2 = CircularInsert.InsertAtEnd(node2, 9);
-node2 = CircularInsert.InsertAtEnd(node2, 8);
+//node2 = CircularInsert.InsertAtEnd(node2, 7);
+//node2 = CircularInsert.InsertAtEnd(node2, 6);
+//node2 = CircularInsert.InsertAtEnd(node2, 9);
+//node2 = CircularInsert.InsertAtEnd(node2, 8);
 
 // delete at front:
 //node2 = CircularDelete.DeleteAtFront(node2);
@@ -213,4 +215,11 @@ node2 = CircularInsert.InsertAtEnd(node2, 8);
 //CircularSearch.BasedOnPosition(node2, 5);
 
 // search based on value:
-CircularSearch.BasedOnValue(node2, 10);
+//CircularSearch.BasedOnValue(node2, 10);
+
+// circular doubly linked list:
+
+// insert at front:
+CircularDoublyNode node = CircularDoublyInsert.InsertAtFront(null!, 3);
+node = CircularDoublyInsert.InsertAtFront(node, 2);
+node = CircularDoublyInsert.InsertAtFront(node, 1);
