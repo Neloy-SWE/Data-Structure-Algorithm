@@ -227,3 +227,6 @@ node = CircularDoublyInsert.InsertAtFront(node, 1);
 // insert at end:
 //CircularDoublyNode node = CircularDoublyInsert.InsertAtEnd(null!, 3);
 node = CircularDoublyInsert.InsertAtEnd(node, 4);
+
+// insert after node:
+node = CircularDoublyInsert.InsertAfterNode(node, 5, 4);

@@ -56,5 +56,37 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
             ShowLinkedList.ShowCircularDoubly(node, "Inserted at end:");
             return node;
         }
+
+        public static CircularDoublyNode InsertAfterNode(CircularDoublyNode node, int data, int nodeData)
+        {
+            CircularDoublyNode newNode = new(data);
+            if (node == null)
+            {
+                Console.WriteLine("Node is empty!\n");
+                return null!;
+            }
+            CircularDoublyNode currentNode = node;
+            do
+            {
+                if (currentNode.data == nodeData)
+                {
+                    newNode.next = currentNode.next;
+                    newNode.previous = currentNode;
+
+                    currentNode.next.previous = newNode;
+                    currentNode.next = newNode;
+
+                    if (currentNode == node.previous)
+                    {
+                        node.previous = newNode;
+                    }
+                    ShowLinkedList.ShowCircularDoubly(node, $"{data} is inserted after node: {nodeData}");
+                    return node;
+                }
+                currentNode = currentNode.next;
+            } while (currentNode != node);
+            ShowLinkedList.ShowCircularDoubly(node, $"{data} is inserted after node: {nodeData}");
+            return node;
+        }
     }
 }
