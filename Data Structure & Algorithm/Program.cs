@@ -223,3 +223,7 @@ using System.Xml.Linq;
 CircularDoublyNode node = CircularDoublyInsert.InsertAtFront(null!, 3);
 node = CircularDoublyInsert.InsertAtFront(node, 2);
 node = CircularDoublyInsert.InsertAtFront(node, 1);
+
+// insert at end:
+//CircularDoublyNode node = CircularDoublyInsert.InsertAtEnd(null!, 3);
+node = CircularDoublyInsert.InsertAtEnd(node, 4);

@@ -30,7 +30,31 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
                 node = newNode;
             }
             ShowLinkedList.ShowCircularDoubly(node, "Inserted at front:");
-            return node!;
+            return node;
+        }
+
+        public static CircularDoublyNode InsertAtEnd(CircularDoublyNode node, int data)
+        {
+            Console.WriteLine("Insert at end:\n");
+            CircularDoublyNode newNode = new(data);
+
+            if (node == null)
+            {
+                Console.WriteLine("Node is empty! inserting the first node:\n");
+                newNode.next = newNode;
+                newNode.previous = newNode;
+                node = newNode;
+            }
+            else
+            {
+                CircularDoublyNode currentNode = node.previous;
+                newNode.next = node;
+                newNode.previous = currentNode;
+                node.previous = newNode;
+                currentNode.next = newNode;
+            }
+            ShowLinkedList.ShowCircularDoubly(node, "Inserted at end:");
+            return node;
         }
     }
 }
