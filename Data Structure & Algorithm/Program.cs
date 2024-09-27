@@ -229,7 +229,13 @@ node = CircularDoublyInsert.InsertAtFront(node, 1);
 node = CircularDoublyInsert.InsertAtEnd(node, 4);
 
 // insert after node:
+//node = CircularDoublyInsert.InsertAfterNode(node, 5, 10);
 node = CircularDoublyInsert.InsertAfterNode(node, 5, 4);
 
 // insert before node:
-node = CircularDoublyInsert.InsertBeforeNode(node, 7, 1);
+//node = CircularDoublyInsert.InsertBeforeNode(node, 7, 10);
+node = CircularDoublyInsert.InsertBeforeNode(node, 7, 5);
+
+// insert at specific position:
+//node = CircularDoublyInsert.InsertAtSpecificPosition(node, 6, 10);
+node = CircularDoublyInsert.InsertAtSpecificPosition(node, 6, 2);

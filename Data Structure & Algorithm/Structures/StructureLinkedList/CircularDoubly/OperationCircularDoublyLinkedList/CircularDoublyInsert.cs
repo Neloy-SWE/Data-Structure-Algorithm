@@ -86,7 +86,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
                 }
                 currentNode = currentNode.next;
             } while (currentNode != node);
-            ShowLinkedList.ShowCircularDoubly(node, $"{data} is inserted after node: {nodeData}");
+            Console.WriteLine($"Given node: {nodeData} is not found!\n");
             return node;
         }
 
@@ -119,7 +119,60 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
                 }
                 currentNode = currentNode.next;
             } while (currentNode != node);
-            ShowLinkedList.ShowCircularDoubly(node, $"{data} is inserted before node: {nodeData}");
+            Console.WriteLine($"Given node: {nodeData} is not found!\n");
+            return node;
+        }
+
+
+        public static CircularDoublyNode InsertAtSpecificPosition(CircularDoublyNode node, int data, int position)
+        {
+            Console.WriteLine($"Insert {data} at position: {position}:\n");
+            CircularDoublyNode newNode = new(data);
+            if (node == null)
+            {
+                if (position > 1)
+                {
+                    Console.WriteLine("Node is empty!\n");
+                    return null!;
+                }
+
+                newNode.next = newNode;
+                newNode.previous = newNode;
+                ShowLinkedList.ShowCircularDoubly(node!, $"{data} is inserted at the position: {position}");
+                return newNode;
+            }
+
+            if (position == 1)
+            {
+                newNode.next = node;
+                newNode.previous = node.previous;
+                node.previous.next = newNode;
+                node.previous = newNode;
+                ShowLinkedList.ShowCircularDoubly(node, $"{data} is inserted at the position: {position}");
+                return newNode;
+            }
+
+            CircularDoublyNode currentNode = node;
+            for (int i = 1; i < position - 1; i++)
+            {
+
+                currentNode = currentNode.next;
+                if (currentNode == node)
+                {
+                    Console.WriteLine("Out of range!\n");
+                    return node;
+                }
+            }
+            newNode.next = currentNode.next;
+            newNode.previous = currentNode;
+
+            if (currentNode.next != null)
+            {
+                currentNode.next.previous = newNode;
+            }
+
+            currentNode.next = newNode;
+            ShowLinkedList.ShowCircularDoubly(node, $"{data} is inserted at the position: {position}");
             return node;
         }
     }
