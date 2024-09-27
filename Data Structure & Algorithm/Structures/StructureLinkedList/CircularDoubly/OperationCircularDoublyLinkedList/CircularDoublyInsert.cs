@@ -59,6 +59,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
 
         public static CircularDoublyNode InsertAfterNode(CircularDoublyNode node, int data, int nodeData)
         {
+            Console.WriteLine($"Insert {data} after node: {nodeData}:\n");
             CircularDoublyNode newNode = new(data);
             if (node == null)
             {
@@ -86,6 +87,39 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
                 currentNode = currentNode.next;
             } while (currentNode != node);
             ShowLinkedList.ShowCircularDoubly(node, $"{data} is inserted after node: {nodeData}");
+            return node;
+        }
+
+        public static CircularDoublyNode InsertBeforeNode(CircularDoublyNode node, int data, int nodeData)
+        {
+            Console.WriteLine($"Insert {data} before node: {nodeData}:\n");
+            CircularDoublyNode newNode = new(data);
+            if (node == null)
+            {
+                Console.WriteLine("Node is empty!\n");
+                return null!;
+            }
+            CircularDoublyNode currentNode = node;
+            do
+            {
+                if (currentNode.data == nodeData)
+                {
+                    newNode.next = currentNode;
+                    newNode.previous = currentNode.previous;
+
+                    currentNode.previous.next = newNode;
+                    currentNode.previous = newNode;
+
+                    if (currentNode == node)
+                    {
+                        node = newNode;
+                    }
+                    ShowLinkedList.ShowCircularDoubly(node, $"{data} is inserted before node: {nodeData}");
+                    return node;
+                }
+                currentNode = currentNode.next;
+            } while (currentNode != node);
+            ShowLinkedList.ShowCircularDoubly(node, $"{data} is inserted before node: {nodeData}");
             return node;
         }
     }
