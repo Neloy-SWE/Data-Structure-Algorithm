@@ -241,7 +241,7 @@ node = CircularDoublyInsert.InsertBeforeNode(node, 7, 5);
 node = CircularDoublyInsert.InsertAtSpecificPosition(node, 6, 2);
 
 // delete at fornt:
-node = CircularDoublyDelete.DeleteAtFront(node);
+//node = CircularDoublyDelete.DeleteAtFront(node);
 //node = CircularDoublyDelete.DeleteAtFront(node);
 //node = CircularDoublyDelete.DeleteAtFront(node);
 //node = CircularDoublyDelete.DeleteAtFront(node);
@@ -252,7 +252,7 @@ node = CircularDoublyDelete.DeleteAtFront(node);
 //node = CircularDoublyDelete.DeleteAtFront(node);
 
 // delete at end:
-node = CircularDoublyDelete.DeleteAtEnd(node);
+//node = CircularDoublyDelete.DeleteAtEnd(node);
 //node = CircularDoublyDelete.DeleteAtEnd(node);
 //node = CircularDoublyDelete.DeleteAtEnd(node);
 //node = CircularDoublyDelete.DeleteAtEnd(node);
@@ -262,9 +262,21 @@ node = CircularDoublyDelete.DeleteAtEnd(node);
 //node = CircularDoublyDelete.DeleteAtEnd(node);
 
 // delete after node:
-node = CircularDoublyDelete.DeleteAfterNode(node, 3);
+//node = CircularDoublyDelete.DeleteAfterNode(node, 3);
 //node = CircularDoublyDelete.DeleteAfterNode(node, 6);
 //node = CircularDoublyDelete.DeleteAfterNode(node, 3);
 //node = CircularDoublyDelete.DeleteAfterNode(node, 6);
 //node = CircularDoublyDelete.DeleteAtFront(node);
 //node = CircularDoublyDelete.DeleteAfterNode(node, 6);
+
+// delete before node:
+node = CircularDoublyDelete.DeleteBeforeNode(node, 1);
+node = CircularDoublyDelete.DeleteBeforeNode(node, 2);
+node = CircularDoublyDelete.DeleteBeforeNode(node, 5);
+node = CircularDoublyDelete.DeleteBeforeNode(node, 4);
+node = CircularDoublyDelete.DeleteBeforeNode(node, 4);
+node = CircularDoublyDelete.DeleteBeforeNode(node, 4);
+node = CircularDoublyDelete.DeleteBeforeNode(node, 5);
+node = CircularDoublyDelete.DeleteBeforeNode(node, 5);
+node = CircularDoublyDelete.DeleteBeforeNode(node, 100);
+//node = CircularDoublyDelete.DeleteBeforeNode(node, 100);

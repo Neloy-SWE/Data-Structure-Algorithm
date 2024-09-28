@@ -55,7 +55,8 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
 
         }
 
-        public static CircularDoublyNode DeleteAfterNode(CircularDoublyNode node, int givenNode) {
+        public static CircularDoublyNode DeleteAfterNode(CircularDoublyNode node, int givenNode)
+        {
             Console.WriteLine($"Delete after node: {givenNode}\n");
             if (node == null)
             {
@@ -76,6 +77,41 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
             } while (currentNode != node);
 
             Console.WriteLine("Index out of bound!\n");
+            return node;
+        }
+
+        public static CircularDoublyNode DeleteBeforeNode(CircularDoublyNode node, int givenNode)
+        {
+            Console.WriteLine($"Delete before node: {givenNode}\n");
+            if (node == null)
+            {
+                Console.WriteLine("Linked list is empty!\n");
+                return null!;
+            }
+            CircularDoublyNode currentNode = node;
+            do
+            {
+                if (node.data == givenNode)
+                {
+                    Console.WriteLine("Not possible to delete before first node!\n");
+                    return node;
+                }
+                else if (currentNode.data == givenNode)
+                {
+                    if (currentNode.previous == node)
+                    {
+                        node = currentNode;
+
+                    }
+                    currentNode.previous = currentNode.previous.previous;
+                    currentNode.previous.next = currentNode;
+                    ShowLinkedList.ShowCircularDoubly(node, "Deleted before given node:");
+                    return node;
+                }
+                currentNode = currentNode.next;
+
+            } while (currentNode != node);
+            Console.WriteLine("Given node is not found!\n");
             return node;
         }
     }
