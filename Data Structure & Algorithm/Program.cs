@@ -239,3 +239,6 @@ node = CircularDoublyInsert.InsertBeforeNode(node, 7, 5);
 // insert at specific position:
 //node = CircularDoublyInsert.InsertAtSpecificPosition(node, 6, 10);
 node = CircularDoublyInsert.InsertAtSpecificPosition(node, 6, 2);
+
+// delete at fornt:
+node = CircularDoublyDelete.DeleteAtFront(node);
