@@ -16,6 +16,11 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
                 Console.WriteLine("Linked list is empty!\n");
                 return null!;
             }
+            if (node.next == node && node.previous == node)
+            {
+                Console.WriteLine("You deleted the last element of the list!\n");
+                return null!;
+            }
 
             CircularDoublyNode currentNode = node;
             currentNode = currentNode.next;
