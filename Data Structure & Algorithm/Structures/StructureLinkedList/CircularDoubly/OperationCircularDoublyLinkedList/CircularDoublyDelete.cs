@@ -30,5 +30,29 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
             ShowLinkedList.ShowCircularDoubly(node, "Deleted at front:");
             return node;
         }
+
+        public static CircularDoublyNode DeleteAtEnd(CircularDoublyNode node)
+        {
+            Console.WriteLine("Delete at end:\n");
+            if (node == null)
+            {
+                Console.WriteLine("Linked list is empty!\n");
+                return null!;
+            }
+            if (node.next == node && node.previous == node)
+            {
+                Console.WriteLine("You deleted the last element of the list!\n");
+                return null!;
+            }
+
+            CircularDoublyNode currentNode = node.previous;
+
+            currentNode.previous.next = currentNode.next;
+            currentNode.next.previous = currentNode.previous;
+            ShowLinkedList.ShowCircularDoubly(node, "Deleted at end:");
+            return node;
+
+
+        }
     }
 }
