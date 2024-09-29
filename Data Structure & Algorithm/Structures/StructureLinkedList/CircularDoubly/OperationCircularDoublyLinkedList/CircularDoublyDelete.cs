@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -112,6 +113,40 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
 
             } while (currentNode != node);
             Console.WriteLine("Given node is not found!\n");
+            return node;
+        }
+
+        public static CircularDoublyNode DeleteAtSpecificNode(CircularDoublyNode node, int value)
+        {
+            Console.WriteLine($"Delete specific node: {value}\n");
+            if (node == null)
+            {
+                Console.WriteLine("Linked list is empty!\n");
+                return null!;
+            }
+            CircularDoublyNode currentNode = node;
+            do
+            {
+                if (currentNode.data == value)
+                {
+                    if (currentNode.next == currentNode)
+                    {
+                        Console.WriteLine("You deleted the last node of the list!\n");
+                        return null!;
+                    }
+                    currentNode.previous.next = currentNode.next;
+                    currentNode.next.previous = currentNode.previous;
+                    if (currentNode == node)
+                    {
+                        node = currentNode.next;
+                    }
+                    ShowLinkedList.ShowCircularDoubly(node, $"Node {value} is deleted!");
+                    return node;
+                }
+                currentNode = currentNode.next;
+            } while (currentNode != node);
+
+            Console.WriteLine("Node is not found!\n");
             return node;
         }
     }
