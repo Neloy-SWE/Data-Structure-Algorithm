@@ -292,7 +292,7 @@ node = CircularDoublyInsert.InsertAtSpecificPosition(node, 6, 2);
 //node = CircularDoublyDelete.DeleteSpecificNode(node, 7);
 
 // delete at specific index:
-node = CircularDoublyDelete.DeleteAtSpecificIndex(node, 4);
+//node = CircularDoublyDelete.DeleteAtSpecificIndex(node, 4);
 //node = CircularDoublyDelete.DeleteAtSpecificIndex(node, 1);
 //node = CircularDoublyDelete.DeleteAtSpecificIndex(node, 7);
 //node = CircularDoublyDelete.DeleteAtSpecificIndex(node, 4);
@@ -302,3 +302,6 @@ node = CircularDoublyDelete.DeleteAtSpecificIndex(node, 4);
 //node = CircularDoublyDelete.DeleteAtSpecificIndex(node, 2);
 //node = CircularDoublyDelete.DeleteAtSpecificIndex(node, 1);
 //node = CircularDoublyDelete.DeleteAtSpecificIndex(node, 10);
+
+// show circular doubly linked list node:
+CircularDoublySearch.ShowSpecificNode(node, 6);
