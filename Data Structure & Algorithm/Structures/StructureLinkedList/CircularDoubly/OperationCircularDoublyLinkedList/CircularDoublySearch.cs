@@ -30,5 +30,32 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
 
             Console.WriteLine($"Node {nodeValue} is not found!\n");
         }
+
+        public static void ShowNodeAtIndex(CircularDoublyNode node, int index)
+        {
+            Console.WriteLine($"Show node at specific index {index}:\n");
+            if (node == null)
+            {
+                Console.WriteLine("Linked list is empty!\n");
+                return;
+            }
+            CircularDoublyNode currentNode = node;
+            int count = 1;
+            while (count <= index)
+            {
+                if (count == index)
+                {
+                    Console.WriteLine($"At index {index}, {currentNode.data} is found!\n");
+                    return;
+                }
+                currentNode = currentNode.next;
+                if (currentNode == node)
+                {
+                    break;
+                }
+                count++;
+            }
+            Console.WriteLine($"index {index} out of bound!\n");
+        }
     }
 }
