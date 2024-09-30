@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -116,7 +117,7 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
             return node;
         }
 
-        public static CircularDoublyNode DeleteAtSpecificNode(CircularDoublyNode node, int value)
+        public static CircularDoublyNode DeleteSpecificNode(CircularDoublyNode node, int value)
         {
             Console.WriteLine($"Delete specific node: {value}\n");
             if (node == null)
@@ -146,6 +147,45 @@ namespace Data_Structure___Algorithm.Structures.StructureLinkedList.CircularDoub
                 currentNode = currentNode.next;
             } while (currentNode != node);
 
+            Console.WriteLine("Node is not found!\n");
+            return node;
+        }
+
+        public static CircularDoublyNode DeleteAtSpecificIndex(CircularDoublyNode node, int index)
+        {
+            Console.WriteLine($"Delete specific position {index} node:\n");
+            if (node == null)
+            {
+                Console.WriteLine("Linked list is empty!\n");
+                return null!;
+            }
+            CircularDoublyNode currentNode = node;
+            int count = 1;
+            while (count <= index)
+            {
+                if (count == index)
+                {
+                    if (currentNode.next == currentNode)
+                    {
+                        Console.WriteLine("You deleted the last element of the list!\n");
+                        return null!;
+                    }
+                    currentNode.previous.next = currentNode.next;
+                    currentNode.next.previous = currentNode.previous;
+                    if (currentNode == node)
+                    {
+                        node = currentNode.next;
+                    }
+                    ShowLinkedList.ShowCircularDoubly(node, $"Node at position {index} is deleted!");
+                    return node;
+                }
+                currentNode = currentNode.next;
+                if (currentNode == node)
+                {
+                    break;
+                }
+                count++;
+            }
             Console.WriteLine("Node is not found!\n");
             return node;
         }
