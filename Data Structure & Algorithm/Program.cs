@@ -8,9 +8,11 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Operations;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operations;
+using Data_Structure___Algorithm.Structures.StructureStack;
 using System.Xml.Linq;
 
 /// array
+
 //BasicArray basicArray = new();
 //basicArray.InitializeHelper();
 //basicArray.ShowDynamic();
@@ -220,25 +222,25 @@ using System.Xml.Linq;
 // circular doubly linked list:
 
 // insert at front:
-CircularDoublyNode node = CircularDoublyInsert.InsertAtFront(null!, 3);
-node = CircularDoublyInsert.InsertAtFront(node, 2);
-node = CircularDoublyInsert.InsertAtFront(node, 1);
+//CircularDoublyNode node = CircularDoublyInsert.InsertAtFront(null!, 3);
+//node = CircularDoublyInsert.InsertAtFront(node, 2);
+//node = CircularDoublyInsert.InsertAtFront(node, 1);
 
-// insert at end:
-//CircularDoublyNode node = CircularDoublyInsert.InsertAtEnd(null!, 3);
-node = CircularDoublyInsert.InsertAtEnd(node, 4);
+//// insert at end:
+////CircularDoublyNode node = CircularDoublyInsert.InsertAtEnd(null!, 3);
+//node = CircularDoublyInsert.InsertAtEnd(node, 4);
 
-// insert after node:
-//node = CircularDoublyInsert.InsertAfterNode(node, 5, 10);
-node = CircularDoublyInsert.InsertAfterNode(node, 5, 4);
+//// insert after node:
+////node = CircularDoublyInsert.InsertAfterNode(node, 5, 10);
+//node = CircularDoublyInsert.InsertAfterNode(node, 5, 4);
 
-// insert before node:
-//node = CircularDoublyInsert.InsertBeforeNode(node, 7, 10);
-node = CircularDoublyInsert.InsertBeforeNode(node, 7, 5);
+//// insert before node:
+////node = CircularDoublyInsert.InsertBeforeNode(node, 7, 10);
+//node = CircularDoublyInsert.InsertBeforeNode(node, 7, 5);
 
-// insert at specific position:
-//node = CircularDoublyInsert.InsertAtSpecificPosition(node, 6, 10);
-node = CircularDoublyInsert.InsertAtSpecificPosition(node, 6, 2);
+//// insert at specific position:
+////node = CircularDoublyInsert.InsertAtSpecificPosition(node, 6, 10);
+//node = CircularDoublyInsert.InsertAtSpecificPosition(node, 6, 2);
 
 // delete at fornt:
 //node = CircularDoublyDelete.DeleteAtFront(node);
@@ -308,4 +310,10 @@ node = CircularDoublyInsert.InsertAtSpecificPosition(node, 6, 2);
 
 // show circular doubly linked list node at specific index:
 //CircularDoublySearch.ShowNodeAtIndex(node, 20);
-CircularDoublySearch.ShowNodeAtIndex(node, 7);
+//CircularDoublySearch.ShowNodeAtIndex(node, 7);
+
+
+/// stack
+
+FixedSizedStack fixedSizedStack = new(5);
+fixedSizedStack.IsEmpty();
