@@ -317,3 +317,7 @@ using System.Xml.Linq;
 
 FixedSizedStack fixedSizedStack = new(5);
 fixedSizedStack.IsEmpty();
+fixedSizedStack.Push(0);
+fixedSizedStack.Push(1);
+fixedSizedStack.Push(2);
+fixedSizedStack.Push(3);
