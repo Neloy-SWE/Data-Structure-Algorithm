@@ -41,7 +41,19 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
                 top++;
                 elements[top] = elementValue;
                 Console.WriteLine($"New element {elementValue} pushed\n");
+                Show();
             }
+        }
+
+        void Show()
+        {
+            Console.Write("Show current stack:::  ");
+            for (int i = 0; i <= top; i++)
+            {
+                Console.Write(elements[i] + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }
