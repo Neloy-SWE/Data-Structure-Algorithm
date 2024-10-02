@@ -321,3 +321,5 @@ fixedSizedStack.Push(0);
 fixedSizedStack.Push(1);
 fixedSizedStack.Push(2);
 fixedSizedStack.Push(3);
+fixedSizedStack.Pop();
+fixedSizedStack.Push(3);

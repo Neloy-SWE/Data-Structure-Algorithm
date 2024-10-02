@@ -45,6 +45,21 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
             }
         }
 
+        public void Pop()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("Stack is empty!\n");
+            }
+            else
+            {
+                Console.WriteLine($"Element {elements[top]} is poped!\n");
+                elements[top] = 0;
+                top--;
+                Show();
+            }
+        }
+
         void Show()
         {
             Console.Write("Show current stack:::  ");
