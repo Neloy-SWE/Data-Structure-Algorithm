@@ -316,10 +316,19 @@ using System.Xml.Linq;
 /// stack
 
 FixedSizedStack fixedSizedStack = new(5);
+
+// check is empty:
 fixedSizedStack.IsEmpty();
+
+// push:
 fixedSizedStack.Push(0);
 fixedSizedStack.Push(1);
 fixedSizedStack.Push(2);
 fixedSizedStack.Push(3);
+
+// pop:
 fixedSizedStack.Pop();
 fixedSizedStack.Push(3);
+
+// top:
+fixedSizedStack.Top();

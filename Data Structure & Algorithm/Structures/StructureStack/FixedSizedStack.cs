@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Data_Structure___Algorithm.Structures.StructureStack
 {
+    // basically we are using array here which is a fixed size data structure
+    // to use array we must declare the size of the array
     internal class FixedSizedStack
     {
         private int[] elements;
@@ -57,6 +59,18 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
                 elements[top] = 0;
                 top--;
                 Show();
+            }
+        }
+
+        public void Top()
+        {
+            if (top == -1)
+            {
+                Console.WriteLine("Stack is empty!\n");
+            }
+            else
+            {
+                Console.WriteLine($"Top element of the stack is: {elements[top]}\n");
             }
         }
 
