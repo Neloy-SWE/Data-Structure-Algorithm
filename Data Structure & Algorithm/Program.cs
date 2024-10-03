@@ -315,26 +315,32 @@ using System.Xml.Linq;
 
 /// stack
 
-FixedSizedStack fixedSizedStack = new(5);
+// fixed size statck:
+//FixedSizedStack fixedSizedStack = new(5);
 
-// check is empty:
-fixedSizedStack.IsEmpty();
+//// check is empty:
+//fixedSizedStack.IsEmpty();
 
-// push:
-fixedSizedStack.Push(0);
-fixedSizedStack.Push(1);
-fixedSizedStack.Push(2);
-fixedSizedStack.Push(3);
+//// push:
+//fixedSizedStack.Push(0);
+//fixedSizedStack.Push(1);
+//fixedSizedStack.Push(2);
+//fixedSizedStack.Push(3);
 
-// pop:
-fixedSizedStack.Pop();
-fixedSizedStack.Push(3);
+//// pop:
+//fixedSizedStack.Pop();
+//fixedSizedStack.Push(3);
 
-// top:
-fixedSizedStack.Top();
+//// top:
+//fixedSizedStack.Top();
 
-// check is full:
-fixedSizedStack.IsFull();
-fixedSizedStack.Push(4);
-fixedSizedStack.IsFull();
-fixedSizedStack.Push(5);
+//// check is full:
+//fixedSizedStack.IsFull();
+//fixedSizedStack.Push(4);
+//fixedSizedStack.IsFull();
+//fixedSizedStack.Push(5);
+
+
+// dynamic stack:
+DynamicStack dynamicStack = new();
+dynamicStack.Push(1);
