@@ -35,6 +35,31 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
             Show();
         }
 
+        public void Pop()
+        {
+
+            if (node == null)
+            {
+                Console.WriteLine("Stack is empty!\n");
+            }
+            else if (node.next == null)
+            {
+                node = null!;
+                Console.WriteLine("Last element of the stack is poped!\n");
+            }
+            else
+            {
+                Node currentNode = node;
+                while (currentNode.next.next != null)
+                {
+                    currentNode = currentNode.next;
+                }
+                Console.WriteLine($"{currentNode.next.data} is poped!\n");
+                currentNode.next = null!;
+                Show();
+            }
+        }
+
         public void Show()
         {
             if (node == null)
