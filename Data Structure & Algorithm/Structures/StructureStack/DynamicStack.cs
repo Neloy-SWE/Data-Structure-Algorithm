@@ -24,12 +24,22 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
             Show();
         }
 
+        public void Pop()
+        {
+            Console.WriteLine($"Element {list[list.Count - 1]} is poped!\n");
+            list.Remove(list.Count);
+            Show();
+        }
+
         public void Show()
         {
             Console.Write("Current stack is::: ");
-            foreach (var item in list) {
-                Console.WriteLine(item +" ");
+            foreach (var item in list)
+            {
+                Console.Write(item + " ");
             }
+            Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }
