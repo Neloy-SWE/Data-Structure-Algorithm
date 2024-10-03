@@ -360,3 +360,8 @@ dynamicStack.Push(4);
 
 // pop:
 dynamicStack.Pop();
+
+// top:
+dynamicStack.Top();
+dynamicStack.Pop();
+dynamicStack.Top();

@@ -10,7 +10,6 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
     internal class DynamicStack
     {
         private ArrayList list;
-        private int top = -1;
 
         public DynamicStack()
         {
@@ -27,8 +26,20 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
         public void Pop()
         {
             Console.WriteLine($"Element {list[list.Count - 1]} is poped!\n");
-            list.RemoveAt(list.Count-1);
+            list.RemoveAt(list.Count - 1);
             Show();
+        }
+
+        public void Top()
+        {
+            if (list.Count > 0)
+            {
+                Console.WriteLine($"Top of the stack is: {list[list.Count - 1]}\n");
+            }
+            else
+            {
+                Console.WriteLine("Stack is empty!\n");
+            }
         }
 
         public void Show()
