@@ -349,6 +349,8 @@ dynamicStack.Push(1);
 dynamicStack.Push(2);
 dynamicStack.Push(3);
 dynamicStack.Push(4);
+dynamicStack.Push(5);
+dynamicStack.Push(4);
 //dynamicStack.Push(5);
 //dynamicStack.Push(6);
 //dynamicStack.Push(7);

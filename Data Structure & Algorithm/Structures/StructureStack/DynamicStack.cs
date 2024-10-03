@@ -27,7 +27,7 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
         public void Pop()
         {
             Console.WriteLine($"Element {list[list.Count - 1]} is poped!\n");
-            list.Remove(list.Count);
+            list.RemoveAt(list.Count-1);
             Show();
         }
 
