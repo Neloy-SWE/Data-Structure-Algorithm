@@ -8,16 +8,31 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
 {
     internal class LinkedListAsStack
     {
-        Node node = null!;
-        private class Node
+        private Node node = null!;
+        private class Node(int data)
         {
-            public int data;
-            public Node next;
-            Node(int data)
+            public int data { get; } = data;
+            public Node next { get; set; } = null!;
+        }
+
+        public void Push(int data)
+        {
+            Node newNode = new(data);
+            if (node == null)
             {
-                this.data = data;
-                this.next = null!;
+                node = newNode;
             }
+            else
+            {
+                Node currentNode = node;
+                while (currentNode.next != null)
+                {
+                    currentNode = currentNode.next;
+                }
+                currentNode.next = newNode;
+            }
+            Console.WriteLine($"{data} is pushed into the stack!\n");
+            Show();
         }
 
         public void Show()
@@ -31,7 +46,7 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
             Node currentNode = node!;
             while (currentNode != null)
             {
-                Console.Write(node!.data + " ");
+                Console.Write(currentNode.data + " ");
                 currentNode = currentNode.next;
             }
             Console.WriteLine();

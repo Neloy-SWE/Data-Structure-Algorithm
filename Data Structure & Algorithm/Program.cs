@@ -369,3 +369,6 @@ using System.Xml.Linq;
 // linked list stack (another dynamic):
 LinkedListAsStack linkedListAsStack = new();
 linkedListAsStack.Show();
+linkedListAsStack.Push(1);
+linkedListAsStack.Push(2);
+linkedListAsStack.Push(3);
