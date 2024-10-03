@@ -332,3 +332,9 @@ fixedSizedStack.Push(3);
 
 // top:
 fixedSizedStack.Top();
+
+// check is full:
+fixedSizedStack.IsFull();
+fixedSizedStack.Push(4);
+fixedSizedStack.IsFull();
+fixedSizedStack.Push(5);

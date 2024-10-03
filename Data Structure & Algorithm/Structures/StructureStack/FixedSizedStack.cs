@@ -74,6 +74,18 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
             }
         }
 
+        public void IsFull()
+        {
+            if (top < maxLength - 1)
+            {
+                Console.WriteLine("Stack is not full yet!\n");
+            }
+            else
+            {
+                Console.WriteLine("Stack is full!\n");
+            }
+        }
+
         void Show()
         {
             Console.Write("Show current stack:::  ");
