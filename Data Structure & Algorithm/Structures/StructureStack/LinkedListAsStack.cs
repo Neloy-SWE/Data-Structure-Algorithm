@@ -60,6 +60,23 @@ namespace Data_Structure___Algorithm.Structures.StructureStack
             }
         }
 
+        public void Top()
+        {
+            if (node == null)
+            {
+                Console.WriteLine("Stack is empty!\n");
+            }
+            else
+            {
+                Node currentNode = node;
+                while (currentNode.next != null)
+                {
+                    currentNode = currentNode.next;
+                }
+                Console.WriteLine($"Top element is: {currentNode.data}\n");
+            }
+        }
+
         public void Show()
         {
             if (node == null)

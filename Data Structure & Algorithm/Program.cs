@@ -379,3 +379,6 @@ linkedListAsStack.Push(3);
 linkedListAsStack.Pop();
 //linkedListAsStack.Pop();
 //linkedListAsStack.Pop();
+
+// top:
+linkedListAsStack.Top();
