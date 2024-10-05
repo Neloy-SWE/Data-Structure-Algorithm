@@ -57,6 +57,22 @@ Type:
 4. Circular doubly.
 5. Header.
 
+Advantages:
+1. linked list are used for dynamic memory allocation.
+2. size can grow or shrink dynimically according to requiremtns, which means effective memory utilization hence, no memory wastage.
+3. insertion and deletion of nodes are easy.
+
+Disadvantages:
+1. random access not possible.
+2. searching is constly and requires 0(n) time complexity.
+3. reverse traverse is not possible for singly linked list.
+4. more nodes, more pointer/object allocation, more memory.
+
+Uses:
+1. browser, image viewer next and previous button; delete, photoshop undo redo button.
+2. linked list are used to implement other data structure like queue, stack, graph etc.
+
+
 **Stack:** (linear data structure) follows the **Last-In-First-Out (LIFO)** priciple in which the insertion of a new element and removal of an existing element takes places at the same end represented as the top of the stack.
 
 Note:
