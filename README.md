@@ -81,3 +81,19 @@ Note:
 Type:
 1. Fixed size.
 2. Dynamic size.
+
+Advantages:
+1. simple.
+2. push pop operations on a stack can be performed in constant time 0(1).
+3. stacks only need to store the element that have been pushed onto them, making them memory-efficent compared to other data structure.
+
+Disadvantages:
+1. limited access.
+2. potential for overflow.
+3. not suitable for random access.
+4. limited capcity. not good for unknown amount of data.
+
+Uses:
+1. Undo function.
+2. browser history.
+3. stacks play a significant role in parsing. parsers in compilers use stacks to validate langugaes and process strings or syntaxes. compilers use stacks to process structures and validate code.
