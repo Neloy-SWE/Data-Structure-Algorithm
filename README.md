@@ -24,6 +24,21 @@ Type:
 1. on the basis of size: fixed size, dynamic size.
 2. on the basis of dimensions: 1,2,3.. dimention.
 
+Advantages of array:
+1. allow random access to elemtns.
+2. arrays have betters cache locality.
+3. represent multiple data items of the same type using single variable.
+
+Disadvantages of array:
+1. fixed size, size cannot increased or decreased. impossible to store extra data if required.
+2. allocating less memory than required to an array leads to loss of data.
+3. an array is homogeneous in nature so, a single array cannot store values of different data types.
+4. Arrays store data in contiguous memory locations, which makes deletion and insertion very difficult to implement. This problem is overcome by implementing linked list.
+
+Uses:
+1. good to use when need to work with ordered data.
+2. useful when your app requires frequent and efficient access to individual elements.
+3. use to make other data structures like stack, queue.
 
 **Linked List:** (linear data structure) consists of a series of nodes connected by pointers or references. each node has has two parts: **data** and **next pointer**.
 
