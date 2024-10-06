@@ -113,3 +113,20 @@ Type:
 4. Priority queue: elements are accessed based on the priority assigned to them.
     - Ascending priority queue: elements are arranged in increasing order of their priority values. elements with smallest priority value is popped first.
     - Descending priority queue: elements are arranged in decreasing order of their priority values. element with largest priority is popped first.
+
+Advantages:
+1. a large amount of data can be managed efficiently with ease.
+2. Operations such as insertion and deletion can be performed with ease as it follows the first in first out rule.
+3. Queues are useful when a perticular service is used by multiple consumers.
+4. Queues are fast in speed for data inter-process communication.
+5. Queues can be used in the implementation of other data structures.
+
+Disadvantages:
+1. The operations such as insertion and deletion of elements from the middle are time consuming.
+2. searching an element takes O(n) time.
+
+Uses:
+1. CPU scheduling and disk scheduling.
+2. handling website traffic.
+3. playlist in media players.
+4. print documents in a serial.
