@@ -31,7 +31,34 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Simple
             }
             rear++;
             elements[rear] = newElement;
+            Console.WriteLine("Enqueue done!\n");
             Show();
+        }
+
+        public void Dequeue()
+        {
+
+            if (front == rear + 1)
+            {
+                Console.WriteLine("Queue is empty!\n");
+                return;
+            }
+            Console.WriteLine("Dequeue " + elements[front] + "\n");
+            for (int i = 0; i < rear; i++)
+            {
+                elements[i] = elements[i + 1];
+            }
+            rear--;
+            if (front == rear + 1)
+            {
+                Console.WriteLine("Last element dequeue done!\n");
+            }
+            else
+            {
+                Console.WriteLine("Dequeue done!\n");
+                Show();
+            }
+
         }
 
         void Show()

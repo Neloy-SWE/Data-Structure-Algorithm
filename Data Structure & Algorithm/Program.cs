@@ -389,9 +389,21 @@ using System.Xml.Linq;
 
 // array based fixed size queue (simple queue):
 SimpleArrayBasedQueue simpleArrayBasedQueue = new(5);
+
+// enqueue
 simpleArrayBasedQueue.Enqueue(2);
 simpleArrayBasedQueue.Enqueue(3);
 simpleArrayBasedQueue.Enqueue(4);
 simpleArrayBasedQueue.Enqueue(5);
 simpleArrayBasedQueue.Enqueue(1);
 simpleArrayBasedQueue.Enqueue(9);
+
+// dequeue:
+simpleArrayBasedQueue.Dequeue();
+simpleArrayBasedQueue.Enqueue(9);
+simpleArrayBasedQueue.Dequeue();
+simpleArrayBasedQueue.Dequeue();
+simpleArrayBasedQueue.Dequeue();
+simpleArrayBasedQueue.Dequeue();
+simpleArrayBasedQueue.Dequeue();
+simpleArrayBasedQueue.Dequeue();
