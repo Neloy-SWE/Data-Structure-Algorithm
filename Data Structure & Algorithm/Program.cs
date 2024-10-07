@@ -8,6 +8,7 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Operations;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operations;
+using Data_Structure___Algorithm.Structures.StructureQueue.Simple;
 using Data_Structure___Algorithm.Structures.StructureStack;
 using System.Xml.Linq;
 
@@ -367,18 +368,30 @@ using System.Xml.Linq;
 //dynamicStack.Top();
 
 // linked list stack (another dynamic):
-LinkedListAsStack linkedListAsStack = new();
+//LinkedListAsStack linkedListAsStack = new();
 
-// push:
-linkedListAsStack.Show();
-linkedListAsStack.Push(1);
-linkedListAsStack.Push(2);
-linkedListAsStack.Push(3);
+//// push:
+//linkedListAsStack.Show();
+//linkedListAsStack.Push(1);
+//linkedListAsStack.Push(2);
+//linkedListAsStack.Push(3);
 
-// pop:
-linkedListAsStack.Pop();
+//// pop:
 //linkedListAsStack.Pop();
-//linkedListAsStack.Pop();
+////linkedListAsStack.Pop();
+////linkedListAsStack.Pop();
 
-// top:
-linkedListAsStack.Top();
+//// top:
+//linkedListAsStack.Top();
+
+
+/// queue
+
+// array based fixed size queue (simple queue):
+SimpleArrayBasedQueue simpleArrayBasedQueue = new(5);
+simpleArrayBasedQueue.Enqueue(2);
+simpleArrayBasedQueue.Enqueue(3);
+simpleArrayBasedQueue.Enqueue(4);
+simpleArrayBasedQueue.Enqueue(5);
+simpleArrayBasedQueue.Enqueue(1);
+simpleArrayBasedQueue.Enqueue(9);
