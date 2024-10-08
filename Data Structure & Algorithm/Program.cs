@@ -412,4 +412,10 @@ simpleArrayBasedQueue.Enqueue(9);
 //simpleArrayBasedQueue.Front();
 
 // rear:
-simpleArrayBasedQueue.Rear();
+//simpleArrayBasedQueue.Rear();
+
+// is empty:
+//simpleArrayBasedQueue.IsEmpty();
+
+// is full:
+//simpleArrayBasedQueue.IsFull();

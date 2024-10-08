@@ -81,6 +81,27 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Simple
             Console.WriteLine($"Rear of the queue is: {elements[rear]}\n");
         }
 
+        public void IsEmpty()
+        {
+            if (front == rear + 1)
+            {
+                Console.WriteLine("Queue is empty!\n");
+                return;
+            }
+            Console.WriteLine("Queue is not empty!\n");
+            Show();
+        }
+
+        public void IsFull()
+        {
+            if (rear + 1 == size)
+            {
+                Console.WriteLine("Queue is full!\n");
+                return;
+            }
+            Console.WriteLine("Queue is not full!\n");
+        }
+
         void Show()
         {
             Console.Write("Show current queue:::  ");
