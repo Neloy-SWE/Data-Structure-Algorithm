@@ -426,8 +426,8 @@ SimpleLinkedListBasedQueue simpleLinkedListBasedQueue = new();
 // enqueue:
 simpleLinkedListBasedQueue.Enqueue(1);
 simpleLinkedListBasedQueue.Enqueue(2);
-simpleLinkedListBasedQueue.Enqueue(3);
-simpleLinkedListBasedQueue.Enqueue(4);
+//simpleLinkedListBasedQueue.Enqueue(3);
+//simpleLinkedListBasedQueue.Enqueue(4);
 
 // dequeue:
 //simpleLinkedListBasedQueue.Dequeue();
@@ -437,4 +437,9 @@ simpleLinkedListBasedQueue.Enqueue(4);
 //simpleLinkedListBasedQueue.Dequeue();
 
 // front:
-simpleLinkedListBasedQueue.Front();
+//simpleLinkedListBasedQueue.Front();
+
+// rear:
+simpleLinkedListBasedQueue.Rear();
+
+simpleLinkedListBasedQueue.Show();

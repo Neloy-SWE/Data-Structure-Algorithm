@@ -72,6 +72,21 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Simple
             Console.WriteLine("Queue is empty!\n");
         }
 
+        public void Rear()
+        {
+            Node currentNode = node;
+            if (currentNode != null)
+            {
+                while (currentNode.next != null)
+                {
+                    currentNode = currentNode.next;
+                }
+                Console.WriteLine($"Rear of the Queue is: {currentNode.data}\n");
+                return;
+            }
+            Console.WriteLine("Queue is empty!\n");
+        }
+
         public void Show()
         {
             if (node == null)
