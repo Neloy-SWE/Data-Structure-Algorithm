@@ -430,9 +430,9 @@ simpleLinkedListBasedQueue.Enqueue(2);
 //simpleLinkedListBasedQueue.Enqueue(4);
 
 // dequeue:
-//simpleLinkedListBasedQueue.Dequeue();
-//simpleLinkedListBasedQueue.Dequeue();
-//simpleLinkedListBasedQueue.Dequeue();
+simpleLinkedListBasedQueue.Dequeue();
+simpleLinkedListBasedQueue.Dequeue();
+simpleLinkedListBasedQueue.Dequeue();
 //simpleLinkedListBasedQueue.Dequeue();
 //simpleLinkedListBasedQueue.Dequeue();
 
@@ -440,6 +440,7 @@ simpleLinkedListBasedQueue.Enqueue(2);
 //simpleLinkedListBasedQueue.Front();
 
 // rear:
-simpleLinkedListBasedQueue.Rear();
+//simpleLinkedListBasedQueue.Rear();
 
-simpleLinkedListBasedQueue.Show();
+// is empty:
+simpleLinkedListBasedQueue.IsEmpty();

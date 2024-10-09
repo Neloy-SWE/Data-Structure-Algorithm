@@ -87,6 +87,19 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Simple
             Console.WriteLine("Queue is empty!\n");
         }
 
+        public void IsEmpty()
+        {
+            Console.WriteLine("Checking queue is empty or not:\n");
+            if (node == null)
+            {
+                Console.WriteLine("Queue is empty!\n");
+            }
+            else
+            {
+                Console.WriteLine("Queue is not empty!\n");
+            }
+        }
+
         public void Show()
         {
             if (node == null)
