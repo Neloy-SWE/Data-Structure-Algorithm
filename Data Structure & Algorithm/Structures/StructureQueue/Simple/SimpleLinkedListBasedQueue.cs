@@ -20,25 +20,45 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Simple
             }
         }
 
-        private Node? node;
+        private Node node = null!;
 
         public void Enqueue(int data)
         {
-            Console.WriteLine($"Inserting new data: {data}\n");
+            Console.WriteLine($"Enqueue new data: {data}\n");
             Node newNode = new(data);
+            Node currentNode = node;
             if (node == null)
             {
                 node = newNode;
             }
             else
             {
-                while (node.next != null)
+                while (currentNode.next != null)
                 {
-                    newNode = node.next;
+                    currentNode = currentNode.next;
                 }
-                node.next = newNode;
+                currentNode.next = newNode;
             }
             Show();
+        }
+
+        public void Dequeue()
+        {
+            Console.WriteLine("Dequeue operation start!\n");
+            if (node == null)
+            {
+                Console.WriteLine("Queue is empty!\n");
+                return;
+            }
+            Console.WriteLine($"Dequeue data: {node!.data}\n");
+            node = node.next;
+            if (node == null)
+            {
+                Console.WriteLine("You remove the last element from the queue!\n");
+                return;
+            }
+            Show();
+
         }
 
         public void Show()

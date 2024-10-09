@@ -422,5 +422,16 @@ using System.Xml.Linq;
 
 // linked list based dynamic queue (simple queuea):
 SimpleLinkedListBasedQueue simpleLinkedListBasedQueue = new();
+
+// enqueue:
 simpleLinkedListBasedQueue.Enqueue(1);
 simpleLinkedListBasedQueue.Enqueue(2);
+simpleLinkedListBasedQueue.Enqueue(3);
+simpleLinkedListBasedQueue.Enqueue(4);
+
+//// dequeue:
+simpleLinkedListBasedQueue.Dequeue();
+simpleLinkedListBasedQueue.Dequeue();
+simpleLinkedListBasedQueue.Dequeue();
+simpleLinkedListBasedQueue.Dequeue();
+simpleLinkedListBasedQueue.Dequeue();
