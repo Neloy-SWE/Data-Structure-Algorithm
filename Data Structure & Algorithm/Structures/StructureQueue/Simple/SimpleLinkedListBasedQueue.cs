@@ -61,6 +61,17 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Simple
 
         }
 
+        public void Front()
+        {
+            Console.WriteLine("Show front:\n");
+            if (node != null)
+            {
+                Console.WriteLine($"Front of the Queue is: {node.data}\n");
+                return;
+            }
+            Console.WriteLine("Queue is empty!\n");
+        }
+
         public void Show()
         {
             if (node == null)
