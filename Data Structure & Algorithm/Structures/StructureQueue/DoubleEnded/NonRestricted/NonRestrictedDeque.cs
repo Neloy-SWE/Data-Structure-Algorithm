@@ -33,13 +33,27 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
                     elements[i] = elements[i - 1];
                 }
                 elements[0] = newElement;
-
+                Console.WriteLine("Enqueue done from front!\n");
                 Show();
             }
             else
             {
-                Console.WriteLine("Queue is not full!\n");
+                Console.WriteLine("Queue overflow!\n");
             }
+        }
+
+        public void EnqueueRear(int newElement)
+        {
+            Console.WriteLine($"Enqueue new element: {newElement} from rear:\n");
+            if (rear == size - 1)
+            {
+                Console.WriteLine("Queue overflow!\n");
+                return;
+            }
+            rear++;
+            elements[rear] = newElement;
+            Console.WriteLine("Enqueue done from rear!\n");
+            Show();
         }
 
         void Show()

@@ -449,9 +449,17 @@ using System.Xml.Linq;
 // double ended queue:
 // nonrestricted:
 NonRestrictedDeque nonRestrictedDeque = new(5);
-nonRestrictedDeque.EnqueueFront(1);
+
+// enqueue from front:
 nonRestrictedDeque.EnqueueFront(2);
-nonRestrictedDeque.EnqueueFront(3);
-nonRestrictedDeque.EnqueueFront(4);
-nonRestrictedDeque.EnqueueFront(5);
-nonRestrictedDeque.EnqueueFront(6);
+nonRestrictedDeque.EnqueueFront(1);
+//nonRestrictedDeque.EnqueueFront(3);
+//nonRestrictedDeque.EnqueueFront(4);
+//nonRestrictedDeque.EnqueueFront(5);
+//nonRestrictedDeque.EnqueueFront(6);
+
+// enqueue from rear:
+nonRestrictedDeque.EnqueueRear(3);
+nonRestrictedDeque.EnqueueRear(4);
+nonRestrictedDeque.EnqueueRear(5);
+nonRestrictedDeque.EnqueueRear(6);
