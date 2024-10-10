@@ -28,11 +28,11 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
             if (rear + 1 < size)
             {
                 rear++;
-                for (int i = rear; i > 0; i--)
+                for (int i = rear; i > front; i--)
                 {
                     elements[i] = elements[i - 1];
                 }
-                elements[0] = newElement;
+                elements[front] = newElement;
                 Console.WriteLine("Enqueue done from front!\n");
                 Show();
             }
