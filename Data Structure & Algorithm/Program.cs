@@ -8,6 +8,7 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Operations;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operations;
+using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRestricted;
 using Data_Structure___Algorithm.Structures.StructureQueue.Simple;
 using Data_Structure___Algorithm.Structures.StructureStack;
 using System.Xml.Linq;
@@ -421,26 +422,36 @@ using System.Xml.Linq;
 //simpleArrayBasedQueue.IsFull();
 
 // linked list based dynamic queue (simple queuea):
-SimpleLinkedListBasedQueue simpleLinkedListBasedQueue = new();
+//SimpleLinkedListBasedQueue simpleLinkedListBasedQueue = new();
 
-// enqueue:
-simpleLinkedListBasedQueue.Enqueue(1);
-simpleLinkedListBasedQueue.Enqueue(2);
-//simpleLinkedListBasedQueue.Enqueue(3);
-//simpleLinkedListBasedQueue.Enqueue(4);
+//// enqueue:
+//simpleLinkedListBasedQueue.Enqueue(1);
+//simpleLinkedListBasedQueue.Enqueue(2);
+////simpleLinkedListBasedQueue.Enqueue(3);
+////simpleLinkedListBasedQueue.Enqueue(4);
 
-// dequeue:
-simpleLinkedListBasedQueue.Dequeue();
-simpleLinkedListBasedQueue.Dequeue();
-simpleLinkedListBasedQueue.Dequeue();
+//// dequeue:
 //simpleLinkedListBasedQueue.Dequeue();
 //simpleLinkedListBasedQueue.Dequeue();
+//simpleLinkedListBasedQueue.Dequeue();
+////simpleLinkedListBasedQueue.Dequeue();
+////simpleLinkedListBasedQueue.Dequeue();
 
-// front:
-//simpleLinkedListBasedQueue.Front();
+//// front:
+////simpleLinkedListBasedQueue.Front();
 
-// rear:
-//simpleLinkedListBasedQueue.Rear();
+//// rear:
+////simpleLinkedListBasedQueue.Rear();
 
-// is empty:
-simpleLinkedListBasedQueue.IsEmpty();
+//// is empty:
+//simpleLinkedListBasedQueue.IsEmpty();
+
+// double ended queue:
+// nonrestricted:
+NonRestrictedDeque nonRestrictedDeque = new(5);
+nonRestrictedDeque.EnqueueFront(1);
+nonRestrictedDeque.EnqueueFront(2);
+nonRestrictedDeque.EnqueueFront(3);
+nonRestrictedDeque.EnqueueFront(4);
+nonRestrictedDeque.EnqueueFront(5);
+nonRestrictedDeque.EnqueueFront(6);
