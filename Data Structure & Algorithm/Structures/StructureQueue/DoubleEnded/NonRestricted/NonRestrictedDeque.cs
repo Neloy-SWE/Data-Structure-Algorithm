@@ -87,6 +87,24 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
             }
         }
 
+        public void DequeueRear()
+        {
+            Console.WriteLine("Dequeue from rear:\n");
+            if (rear >= front)
+            {
+                rear--;
+                Console.WriteLine("Dequeue done from rear:\n");
+                if (rear < front)
+                {
+                    Console.WriteLine("You dequeue the last element!\n");
+                }
+                else
+                {
+                    Show();
+                }
+            }
+        }
+
         void Show()
         {
             Console.Write("Show current queue:::  ");

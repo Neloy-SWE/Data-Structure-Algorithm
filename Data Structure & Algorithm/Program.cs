@@ -478,3 +478,19 @@ nonRestrictedDeque.DequeueFront();
 //nonRestrictedDeque.DequeueFront();
 //nonRestrictedDeque.DequeueFront();
 //nonRestrictedDeque.DequeueFront();
+
+// dequeue from rear:
+//nonRestrictedDeque.EnqueueRear(3);
+//nonRestrictedDeque.EnqueueRear(4);
+nonRestrictedDeque.DequeueRear();
+//nonRestrictedDeque.EnqueueRear(3);
+//nonRestrictedDeque.EnqueueRear(4);
+//nonRestrictedDeque.DequeueRear();
+//nonRestrictedDeque.EnqueueRear(3);
+//nonRestrictedDeque.EnqueueRear(4);
+//nonRestrictedDeque.DequeueRear();
+//nonRestrictedDeque.DequeueRear();
+//nonRestrictedDeque.EnqueueRear(3);
+//nonRestrictedDeque.EnqueueRear(4);
+//nonRestrictedDeque.EnqueueRear(4);
+//nonRestrictedDeque.EnqueueRear(4);
