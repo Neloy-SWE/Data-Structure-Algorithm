@@ -127,10 +127,22 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
                 Console.WriteLine("Queue is empty!\n");
             }
             else {
-
                 Console.WriteLine($"Front is: {elements[front]}\n");
             }
 
+        }
+
+        public void GetRear()
+        {
+            Console.WriteLine("Getting Rear:\n");
+            if ((front == -1 && rear == -1) || front > rear)
+            {
+                Console.WriteLine("Queue is empty!\n");
+            }
+            else
+            {
+                Console.WriteLine($"Rear is: {elements[rear]}\n");
+            }
         }
 
         void Show()
