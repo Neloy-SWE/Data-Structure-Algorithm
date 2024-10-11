@@ -18,28 +18,31 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
         {
             this.size = size;
             this.elements = new int[size];
-            this.front = 0;
+            this.front = -1;
             this.rear = -1;
         }
 
         public void EnqueueFront(int newElement)
         {
             Console.WriteLine($"Enqueue new element: {newElement} from front:\n");
-            if (rear + 1 < size)
+            if (front == -1 && rear == -1)
             {
+                front++;
                 rear++;
-                for (int i = rear; i > front; i--)
-                {
-                    elements[i] = elements[i - 1];
-                }
                 elements[front] = newElement;
-                Console.WriteLine("Enqueue done from front!\n");
-                Show();
+            }
+            else if (front > 0)
+            {
+                front--;
+                elements[front] = newElement;
             }
             else
             {
-                Console.WriteLine("Queue overflow!\n");
+                Console.WriteLine("Enqueue from front is not possible!\n");
+                return;
             }
+            Console.WriteLine("Enqueue done from front!\n");
+            Show();
         }
 
         public void EnqueueRear(int newElement)
@@ -47,7 +50,7 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
             Console.WriteLine($"Enqueue new element: {newElement} from rear:\n");
             if (rear == size - 1)
             {
-                Console.WriteLine("Queue overflow!\n");
+                Console.WriteLine("Enqueue from rear is not possible!\n");
                 return;
             }
             rear++;

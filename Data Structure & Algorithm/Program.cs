@@ -463,3 +463,4 @@ nonRestrictedDeque.EnqueueRear(3);
 nonRestrictedDeque.EnqueueRear(4);
 nonRestrictedDeque.EnqueueRear(5);
 nonRestrictedDeque.EnqueueRear(6);
+nonRestrictedDeque.EnqueueRear(7);
