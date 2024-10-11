@@ -4,6 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ This queue is not follows circular concept.
+ if front is not available, though there are space, fornt insert is not possible.
+ same as for rear
+ */
+
 namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRestricted
 {
     internal class NonRestrictedDeque
@@ -57,6 +63,28 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
             elements[rear] = newElement;
             Console.WriteLine("Enqueue done from rear!\n");
             Show();
+        }
+
+        public void DequeueFront()
+        {
+            Console.WriteLine("Dequeue from front:\n");
+            if (front <= rear)
+            {
+                front++;
+                Console.WriteLine("Dequeue done from front:\n");
+                if (front > rear)
+                {
+                    Console.WriteLine("You dequeue the last element!\n");
+                }
+                else
+                {
+                    Show();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Queue is empty!\n");
+            }
         }
 
         void Show()
