@@ -35,18 +35,17 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
             {
                 front++;
                 rear++;
-                elements[front] = newElement;
             }
             else if (front > 0)
             {
                 front--;
-                elements[front] = newElement;
             }
             else
             {
                 Console.WriteLine("Enqueue from front is not possible!\n");
                 return;
             }
+            elements[front] = newElement;
             Console.WriteLine("Enqueue done from front!\n");
             Show();
         }
@@ -54,12 +53,22 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
         public void EnqueueRear(int newElement)
         {
             Console.WriteLine($"Enqueue new element: {newElement} from rear:\n");
-            if (rear == size - 1)
+
+            if (front == -1 && rear == -1)
+            {
+                front++;
+                rear++;
+            }
+            else if (rear + 1 < size)
+            {
+                rear++;
+            }
+            else
             {
                 Console.WriteLine("Enqueue from rear is not possible!\n");
                 return;
+
             }
-            rear++;
             elements[rear] = newElement;
             Console.WriteLine("Enqueue done from rear!\n");
             Show();
@@ -103,7 +112,17 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
                     Show();
                 }
             }
+            else
+            {
+                Console.WriteLine("Queue is empty!\n");
+            }
         }
+
+        //public void GetFront()
+        //{
+        //    if (front)
+
+        //}
 
         void Show()
         {
