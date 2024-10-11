@@ -506,3 +506,6 @@ nonRestrictedDeque.EnqueueFront(1);
 //nonRestrictedDeque.EnqueueFront(2);
 //nonRestrictedDeque.EnqueueRear(4);
 //nonRestrictedDeque.EnqueueRear(4);
+
+// front:
+nonRestrictedDeque.GetFront();

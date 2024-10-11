@@ -118,11 +118,20 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
             }
         }
 
-        //public void GetFront()
-        //{
-        //    if (front)
 
-        //}
+        public void GetFront()
+        {
+            Console.WriteLine("Getting front:\n");
+            if ((front == -1 && rear == -1) || front > rear)
+            {
+                Console.WriteLine("Queue is empty!\n");
+            }
+            else {
+
+                Console.WriteLine($"Front is: {elements[front]}\n");
+            }
+
+        }
 
         void Show()
         {
