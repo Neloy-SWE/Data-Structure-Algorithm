@@ -126,7 +126,8 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
             {
                 Console.WriteLine("Queue is empty!\n");
             }
-            else {
+            else
+            {
                 Console.WriteLine($"Front is: {elements[front]}\n");
             }
 
@@ -143,6 +144,35 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
             {
                 Console.WriteLine($"Rear is: {elements[rear]}\n");
             }
+        }
+
+        public void Status()
+        {
+            Console.WriteLine("Checking status:\n");
+            bool isFront = false;
+            bool isRear = false;
+            if ((front == -1 && rear == -1) || front > rear)
+            {
+                Console.WriteLine("Queue is empty!\n");
+            }
+            else
+            {
+                if (front > 0)
+                {
+                    Console.WriteLine("Front is available!\n");
+                    isFront = true;
+                }
+                if (rear + 1 < size)
+                {
+                    Console.WriteLine("Rear is available!\n");
+                    isRear = true;
+                }
+                else if (!isFront && !isRear)
+                {
+                    Console.WriteLine("Queue is full!\n");
+                }
+            }
+
         }
 
         void Show()
