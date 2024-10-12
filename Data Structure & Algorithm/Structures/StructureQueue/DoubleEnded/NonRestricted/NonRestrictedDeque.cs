@@ -22,6 +22,7 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
 
         public NonRestrictedDeque(int size)
         {
+            Console.WriteLine(":::: non restricted deque ::::\n\n");
             this.size = size;
             this.elements = new int[size];
             this.front = -1;
@@ -77,7 +78,7 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
         public void DequeueFront()
         {
             Console.WriteLine("Dequeue from front:\n");
-            if (front <= rear)
+            if (front != -1 && front <= rear)
             {
                 front++;
                 Console.WriteLine("Dequeue done from front:\n");
@@ -99,7 +100,7 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
         public void DequeueRear()
         {
             Console.WriteLine("Dequeue from rear:\n");
-            if (rear >= front)
+            if (rear !=-1 && rear >= front)
             {
                 rear--;
                 Console.WriteLine("Dequeue done from rear:\n");

@@ -34,6 +34,7 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.Input
 
         public InputRestrictedDeque(int size)
         {
+            Console.WriteLine(":::: Input restricted deque ::::\n\n");
             this.size = size;
             this.elements = new int[size];
             this.front = -1;
@@ -76,7 +77,7 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.Input
         public void DequeueFront()
         {
             Console.WriteLine("Dequeue from front:\n");
-            if (front <= rear)
+            if (front != -1 && front <= rear)
             {
                 front++;
                 Console.WriteLine("Dequeue done from front:\n");
@@ -94,6 +95,8 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.Input
                 Console.WriteLine("Queue is empty!\n");
             }
         }
+
+
 
 
 
