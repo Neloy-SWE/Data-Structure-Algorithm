@@ -37,7 +37,7 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
                 rear++;
             }
             else if (front > 0)
-            {
+            { 
                 front--;
             }
             else
