@@ -73,6 +73,30 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.Input
 
         }
 
+        public void DequeueFront()
+        {
+            Console.WriteLine("Dequeue from front:\n");
+            if (front <= rear)
+            {
+                front++;
+                Console.WriteLine("Dequeue done from front:\n");
+                if (front > rear)
+                {
+                    Console.WriteLine("You dequeue the last element!\n");
+                }
+                else
+                {
+                    Show();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Queue is empty!\n");
+            }
+        }
+
+
+
         void Show()
         {
             Console.Write("Show current queue:::  ");

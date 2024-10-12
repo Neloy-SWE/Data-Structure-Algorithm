@@ -535,3 +535,12 @@ inputRestrictedDeque.Enqueue(3);
 inputRestrictedDeque.Enqueue(2);
 inputRestrictedDeque.Enqueue(1);
 inputRestrictedDeque.Enqueue(6);
+
+// deque from front:
+inputRestrictedDeque.DequeueFront();
+inputRestrictedDeque.Enqueue(7);
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
