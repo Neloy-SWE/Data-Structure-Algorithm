@@ -8,7 +8,6 @@ using System.Threading.Tasks;
  * we will follow insert from both end and delete from only rear
  * we will not follow any circular concept here.
  * we will use linear concept.
- * we will shift elements to the front if available.
  */
 
 namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.OutputRestricted
@@ -43,10 +42,6 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.Outpu
                     front++;
                     rear++;
                 }
-                else if (front > 0)
-                {
-                    front--;
-                }
                 else
                 {
                     rear++;
@@ -60,6 +55,51 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.Outpu
                 Show();
             }
         }
+
+        public void EnqueueRear(int newElement)
+        {
+            Console.WriteLine($"Enqueue new element: {newElement} from rear:\n");
+            if (front == 0 && rear + 1 == size)
+            {
+                Console.WriteLine("Queue is full!\n");
+                return;
+            }
+            if (front == -1 && rear == -1)
+            {
+                front++;
+                rear++;
+            }
+            else if (rear + 1 < size)
+            {
+                rear++;
+            }
+            elements[rear] = newElement;
+            Console.WriteLine("Enqueue done!\n");
+            Show();
+        }
+
+        public void DequeueRear()
+        {
+            Console.WriteLine("Dequeue from rear:\n");
+            if (rear == -1)
+            {
+                Console.WriteLine("Queue is empty!\n");
+                return;
+            }
+            else
+            {
+                rear--;
+                if (rear == -1)
+                {
+                    Console.WriteLine("You dequeue the last element!\n");
+                }
+                else
+                {
+                    Show();
+                }
+            }
+        }
+
         void Show()
         {
             Console.Write("Show current queue:::  ");

@@ -566,3 +566,25 @@ using System.Xml.Linq;
 OutputRestrictedDeque outputRestrictedDeque = new(5);
 
 // enqueue from front:
+outputRestrictedDeque.EnqueueFront(3);
+outputRestrictedDeque.EnqueueFront(2);
+
+// enqueue form rear:
+outputRestrictedDeque.EnqueueRear(4);
+outputRestrictedDeque.EnqueueFront(1);
+outputRestrictedDeque.EnqueueRear(5);
+
+// dequeue from rear:
+outputRestrictedDeque.DequeueRear();
+//outputRestrictedDeque.DequeueRear();
+//outputRestrictedDeque.DequeueRear();
+//outputRestrictedDeque.DequeueRear();
+//outputRestrictedDeque.DequeueRear();
+//outputRestrictedDeque.DequeueRear();
+//outputRestrictedDeque.EnqueueFront(4);
+//outputRestrictedDeque.EnqueueRear(3);
+//outputRestrictedDeque.EnqueueFront(2);
+//outputRestrictedDeque.DequeueRear();
+//outputRestrictedDeque.DequeueRear();
+//outputRestrictedDeque.DequeueRear();
+//outputRestrictedDeque.DequeueRear();
