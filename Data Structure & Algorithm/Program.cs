@@ -10,6 +10,7 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operations;
 using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.InputRestricted;
 using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRestricted;
+using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.OutputRestricted;
 using Data_Structure___Algorithm.Structures.StructureQueue.Simple;
 using Data_Structure___Algorithm.Structures.StructureStack;
 using System.Xml.Linq;
@@ -526,18 +527,18 @@ using System.Xml.Linq;
 
 
 // input restricted deque:
-InputRestrictedDeque inputRestrictedDeque = new(5);
+//InputRestrictedDeque inputRestrictedDeque = new(5);
 
 // enqueue:
-inputRestrictedDeque.Enqueue(5);
-inputRestrictedDeque.Enqueue(4);
-inputRestrictedDeque.Enqueue(3);
-inputRestrictedDeque.Enqueue(2);
-inputRestrictedDeque.Enqueue(1);
-inputRestrictedDeque.Enqueue(6);
+//inputRestrictedDeque.Enqueue(5);
+//inputRestrictedDeque.Enqueue(4);
+//inputRestrictedDeque.Enqueue(3);
+//inputRestrictedDeque.Enqueue(2);
+//inputRestrictedDeque.Enqueue(1);
+//inputRestrictedDeque.Enqueue(6);
 
 // dequeue from front:
-inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
 //inputRestrictedDeque.Enqueue(7);
 //inputRestrictedDeque.DequeueFront();
 //inputRestrictedDeque.DequeueFront();
@@ -548,14 +549,20 @@ inputRestrictedDeque.DequeueFront();
 //inputRestrictedDeque.DequeueFront();
 
 // dequeue from rear:
-inputRestrictedDeque.DequeueRear();
-inputRestrictedDeque.Enqueue(6);
-inputRestrictedDeque.DequeueRear();
-inputRestrictedDeque.DequeueFront();
-inputRestrictedDeque.DequeueFront();
-inputRestrictedDeque.DequeueRear();
-inputRestrictedDeque.DequeueFront();
-inputRestrictedDeque.DequeueRear();
-inputRestrictedDeque.DequeueRear();
-inputRestrictedDeque.DequeueRear();
-inputRestrictedDeque.DequeueRear();
+//inputRestrictedDeque.DequeueRear();
+//inputRestrictedDeque.Enqueue(6);
+//inputRestrictedDeque.DequeueRear();
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueRear();
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueRear();
+//inputRestrictedDeque.DequeueRear();
+//inputRestrictedDeque.DequeueRear();
+//inputRestrictedDeque.DequeueRear();
+
+
+// output restricted deque:
+OutputRestrictedDeque outputRestrictedDeque = new(5);
+
+// enqueue from front:
