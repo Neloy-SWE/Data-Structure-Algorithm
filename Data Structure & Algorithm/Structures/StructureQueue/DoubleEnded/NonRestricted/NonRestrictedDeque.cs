@@ -38,7 +38,7 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
                 rear++;
             }
             else if (front > 0)
-            { 
+            {
                 front--;
             }
             else
@@ -100,7 +100,7 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRe
         public void DequeueRear()
         {
             Console.WriteLine("Dequeue from rear:\n");
-            if (rear !=-1 && rear >= front)
+            if (rear != -1 && rear >= front)
             {
                 rear--;
                 Console.WriteLine("Dequeue done from rear:\n");

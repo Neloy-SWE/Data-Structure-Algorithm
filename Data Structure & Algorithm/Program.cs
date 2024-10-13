@@ -534,15 +534,28 @@ inputRestrictedDeque.Enqueue(4);
 inputRestrictedDeque.Enqueue(3);
 inputRestrictedDeque.Enqueue(2);
 inputRestrictedDeque.Enqueue(1);
-//inputRestrictedDeque.Enqueue(6);
+inputRestrictedDeque.Enqueue(6);
 
-// deque from front:
+// dequeue from front:
 inputRestrictedDeque.DequeueFront();
-inputRestrictedDeque.Enqueue(7);
+//inputRestrictedDeque.Enqueue(7);
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
+//inputRestrictedDeque.DequeueFront();
+
+// dequeue from rear:
+inputRestrictedDeque.DequeueRear();
+inputRestrictedDeque.Enqueue(6);
+inputRestrictedDeque.DequeueRear();
 inputRestrictedDeque.DequeueFront();
 inputRestrictedDeque.DequeueFront();
+inputRestrictedDeque.DequeueRear();
 inputRestrictedDeque.DequeueFront();
-inputRestrictedDeque.DequeueFront();
-inputRestrictedDeque.DequeueFront();
-inputRestrictedDeque.DequeueFront();
-inputRestrictedDeque.DequeueFront();
+inputRestrictedDeque.DequeueRear();
+inputRestrictedDeque.DequeueRear();
+inputRestrictedDeque.DequeueRear();
+inputRestrictedDeque.DequeueRear();
