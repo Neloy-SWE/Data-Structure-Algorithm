@@ -4,6 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * we will follow here circular concept.
+ * if after remove element front is available
+ * and rear is at top, then rear will be placed at zero index
+ * 
+ * it is also called "Ring Buffer"
+ */
+
 namespace Data_Structure___Algorithm.Structures.StructureQueue.Circular
 {
     internal class CircularQueue
@@ -97,7 +105,7 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Circular
                 {
                     Console.WriteLine("Enqueue possible in available positions!\n");
                 }
-                
+
 
 
             }
