@@ -49,6 +49,33 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Circular
             Show();
         }
 
+        public void Dequeue()
+        {
+            Console.WriteLine("Dequeue start:\n");
+            if (rear == -1 && front == -1)
+            {
+                Console.WriteLine("Queue is empty!\n");
+            }
+            else
+            {
+                front++;
+                Console.WriteLine("Dequeue done!\n");
+                if (front == size)
+                {
+                    front = 0;
+                }
+                else if (front == rear + 1)
+                {
+                    front = -1;
+                    rear = -1;
+                    Console.WriteLine("You removed the last elements of the queue!\n");
+                    return;
+                }
+                Show();
+            }
+
+        }
+
         void Show()
         {
             if (rear == -1 && front == -1)

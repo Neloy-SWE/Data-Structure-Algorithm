@@ -601,3 +601,22 @@ circularQueue.Enqueue(3);
 circularQueue.Enqueue(4);
 circularQueue.Enqueue(5);
 circularQueue.Enqueue(6);
+
+// dequeue:
+circularQueue.Dequeue();
+circularQueue.Enqueue(2);
+circularQueue.Enqueue(3);
+circularQueue.Dequeue();
+circularQueue.Dequeue();
+circularQueue.Dequeue();
+circularQueue.Dequeue();
+circularQueue.Dequeue();
+circularQueue.Dequeue();
+circularQueue.Enqueue(1);
+circularQueue.Dequeue();
+circularQueue.Dequeue();
+circularQueue.Enqueue(2);
+circularQueue.Enqueue(3);
+circularQueue.Dequeue();
+circularQueue.Enqueue(4);
+circularQueue.Enqueue(5);
