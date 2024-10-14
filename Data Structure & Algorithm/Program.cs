@@ -8,6 +8,7 @@ using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Doubly.Operations;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly;
 using Data_Structure___Algorithm.Structures.StructureLinkedList.Singly.Operations;
+using Data_Structure___Algorithm.Structures.StructureQueue.Circular;
 using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.InputRestricted;
 using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRestricted;
 using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.OutputRestricted;
@@ -563,19 +564,19 @@ using System.Xml.Linq;
 
 
 // output restricted deque:
-OutputRestrictedDeque outputRestrictedDeque = new(5);
+//OutputRestrictedDeque outputRestrictedDeque = new(5);
 
 // enqueue from front:
-outputRestrictedDeque.EnqueueFront(3);
-outputRestrictedDeque.EnqueueFront(2);
+//outputRestrictedDeque.EnqueueFront(3);
+//outputRestrictedDeque.EnqueueFront(2);
 
 // enqueue form rear:
-outputRestrictedDeque.EnqueueRear(4);
-outputRestrictedDeque.EnqueueFront(1);
-outputRestrictedDeque.EnqueueRear(5);
+//outputRestrictedDeque.EnqueueRear(4);
+//outputRestrictedDeque.EnqueueFront(1);
+//outputRestrictedDeque.EnqueueRear(5);
 
 // dequeue from rear:
-outputRestrictedDeque.DequeueRear();
+//outputRestrictedDeque.DequeueRear();
 //outputRestrictedDeque.DequeueRear();
 //outputRestrictedDeque.DequeueRear();
 //outputRestrictedDeque.DequeueRear();
@@ -588,3 +589,10 @@ outputRestrictedDeque.DequeueRear();
 //outputRestrictedDeque.DequeueRear();
 //outputRestrictedDeque.DequeueRear();
 //outputRestrictedDeque.DequeueRear();
+
+
+// circular queue:
+CircularQueue circularQueue = new(5);
+
+// enqueue:
+circularQueue.Enqueue(1);
