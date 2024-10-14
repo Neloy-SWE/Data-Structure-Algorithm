@@ -46,6 +46,39 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Circular
             }
             elements[rear] = newElement;
             Console.WriteLine("Enqueue done!\n");
+            Show();
+        }
+
+        void Show()
+        {
+            if (rear == -1 && front == -1)
+            {
+                Console.WriteLine("Queue is empty!\n");
+            }
+            else
+            {
+                Console.Write("Current queue::: ");
+                if (front <= rear)
+                {
+                    for (int i = front; i <= rear; i++)
+                    {
+                        Console.Write(elements[i] + " ");
+                    }
+                }
+                else
+                {
+                    for (int i = front; i < size; i++)
+                    {
+                        Console.Write(elements[i] + " ");
+                    }
+                    for (int i = 0; i <= rear; i++)
+                    {
+                        Console.Write(elements[i] + " ");
+                    }
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine();
         }
 
     }
