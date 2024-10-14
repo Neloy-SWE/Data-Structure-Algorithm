@@ -620,3 +620,9 @@ circularQueue.Enqueue(3);
 circularQueue.Dequeue();
 circularQueue.Enqueue(4);
 circularQueue.Enqueue(5);
+
+// status:
+circularQueue.Status();
+circularQueue.Enqueue(4);
+circularQueue.Enqueue(7);
+circularQueue.Status();

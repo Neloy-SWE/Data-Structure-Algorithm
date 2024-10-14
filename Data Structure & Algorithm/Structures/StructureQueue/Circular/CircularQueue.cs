@@ -76,6 +76,33 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Circular
 
         }
 
+        public void Status()
+        {
+            Console.WriteLine("Showing status:\n");
+            if (rear == -1 && front == -1)
+            {
+                Console.WriteLine("Queue is empty!\n");
+                return;
+            }
+            else
+            {
+                Show();
+                Console.WriteLine($"The front element is: {elements[front]}\n");
+                Console.WriteLine($"The rear element is: {elements[rear]}\n");
+                if (rear + 1 == front || (front == 0 && rear + 1 == size))
+                {
+                    Console.WriteLine("Queue is full!\n");
+                }
+                else
+                {
+                    Console.WriteLine("Enqueue possible in available positions!\n");
+                }
+                
+
+
+            }
+        }
+
         void Show()
         {
             if (rear == -1 && front == -1)
