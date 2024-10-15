@@ -592,37 +592,48 @@ using System.Xml.Linq;
 
 
 // circular queue:
-CircularQueue circularQueue = new(5);
+//CircularQueue circularQueue = new(5);
 
 // enqueue:
-circularQueue.Enqueue(1);
-circularQueue.Enqueue(2);
-circularQueue.Enqueue(3);
-circularQueue.Enqueue(4);
-circularQueue.Enqueue(5);
-circularQueue.Enqueue(6);
+//circularQueue.Enqueue(1);
+//circularQueue.Enqueue(2);
+//circularQueue.Enqueue(3);
+//circularQueue.Enqueue(4);
+//circularQueue.Enqueue(5);
+//circularQueue.Enqueue(6);
 
 // dequeue:
-circularQueue.Dequeue();
-circularQueue.Enqueue(2);
-circularQueue.Enqueue(3);
-circularQueue.Dequeue();
-circularQueue.Dequeue();
-circularQueue.Dequeue();
-circularQueue.Dequeue();
-circularQueue.Dequeue();
-circularQueue.Dequeue();
-circularQueue.Enqueue(1);
-circularQueue.Dequeue();
-circularQueue.Dequeue();
-circularQueue.Enqueue(2);
-circularQueue.Enqueue(3);
-circularQueue.Dequeue();
-circularQueue.Enqueue(4);
-circularQueue.Enqueue(5);
+//circularQueue.Dequeue();
+//circularQueue.Enqueue(2);
+//circularQueue.Enqueue(3);
+//circularQueue.Dequeue();
+//circularQueue.Dequeue();
+//circularQueue.Dequeue();
+//circularQueue.Dequeue();
+//circularQueue.Dequeue();
+//circularQueue.Dequeue();
+//circularQueue.Enqueue(1);
+//circularQueue.Dequeue();
+//circularQueue.Dequeue();
+//circularQueue.Enqueue(2);
+//circularQueue.Enqueue(3);
+//circularQueue.Dequeue();
+//circularQueue.Enqueue(4);
+//circularQueue.Enqueue(5);
 
 // status:
-circularQueue.Status();
-circularQueue.Enqueue(4);
-circularQueue.Enqueue(7);
-circularQueue.Status();
+//circularQueue.Status();
+//circularQueue.Enqueue(4);
+//circularQueue.Enqueue(7);
+//circularQueue.Status();
+
+
+// priority queue:
+if ("c".CompareTo("b") < 0)
+{
+    Console.WriteLine("a is big");
+}
+else
+{
+    Console.WriteLine("b is big bainchod");
+}

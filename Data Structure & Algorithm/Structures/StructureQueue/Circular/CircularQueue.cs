@@ -105,9 +105,6 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Circular
                 {
                     Console.WriteLine("Enqueue possible in available positions!\n");
                 }
-
-
-
             }
         }
 
