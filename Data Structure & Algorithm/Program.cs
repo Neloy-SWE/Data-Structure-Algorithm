@@ -12,6 +12,7 @@ using Data_Structure___Algorithm.Structures.StructureQueue.Circular;
 using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.InputRestricted;
 using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRestricted;
 using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.OutputRestricted;
+using Data_Structure___Algorithm.Structures.StructureQueue.Priority;
 using Data_Structure___Algorithm.Structures.StructureQueue.Simple;
 using Data_Structure___Algorithm.Structures.StructureStack;
 using System.Xml.Linq;
@@ -629,3 +630,9 @@ using System.Xml.Linq;
 
 
 // priority queue:
+AscendingPriorityQueue ascendingPriorityQueue = new(5);
+
+// enqueue:
+ascendingPriorityQueue.Enqueue(10, 2);
+ascendingPriorityQueue.Enqueue(7, 1);
+ascendingPriorityQueue.Enqueue(3, 4);
