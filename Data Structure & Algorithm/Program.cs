@@ -629,11 +629,3 @@ using System.Xml.Linq;
 
 
 // priority queue:
-if ("c".CompareTo("b") < 0)
-{
-    Console.WriteLine("a is big");
-}
-else
-{
-    Console.WriteLine("b is big bainchod");
-}
