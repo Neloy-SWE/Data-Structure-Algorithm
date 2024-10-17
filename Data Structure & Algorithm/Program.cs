@@ -633,6 +633,20 @@ using System.Xml.Linq;
 AscendingPriorityQueue ascendingPriorityQueue = new(5);
 
 // enqueue:
+//ascendingPriorityQueue.Enqueue(20, 1);
 ascendingPriorityQueue.Enqueue(10, 2);
-ascendingPriorityQueue.Enqueue(7, 1);
+ascendingPriorityQueue.Enqueue(7, 5);
 ascendingPriorityQueue.Enqueue(3, 4);
+ascendingPriorityQueue.Enqueue(8, -1);
+//ascendingPriorityQueue.Enqueue(13, 7);
+ascendingPriorityQueue.Enqueue(20, -8);
+ascendingPriorityQueue.Enqueue(5, 10);
+
+// dequeue:
+ascendingPriorityQueue.Dequeue();
+ascendingPriorityQueue.Dequeue();
+ascendingPriorityQueue.Dequeue();
+ascendingPriorityQueue.Dequeue();
+ascendingPriorityQueue.Dequeue();
+ascendingPriorityQueue.Dequeue();
+ascendingPriorityQueue.Dequeue();

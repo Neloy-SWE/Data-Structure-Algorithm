@@ -33,7 +33,7 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Priority
                 int temp;
                 Element tempElement;
 
-                for (int i = 1; i < currentIndex; i++)
+                for (int i = 1; i <= currentIndex; i++)
                 {
                     temp = elements[i].priority;
                     tempElement = elements[i];
@@ -54,6 +54,32 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Priority
             {
                 Console.WriteLine("Queue is full!\n");
             }
+        }
+
+        public void Dequeue()
+        {
+            Console.WriteLine("Dequeue start:\n");
+            if (currentIndex == 0)
+            {
+                Console.WriteLine("You dequeued the last element!\n");
+                currentIndex--;
+                return;
+            }
+            else if (currentIndex + 1 > 0)
+            {
+                for (int i = 1; i <= currentIndex; i++)
+                {
+                    elements[i - 1] = elements[i];
+                }
+                currentIndex--;
+            }
+            else
+            {
+                Console.WriteLine("Queue is empty!\n");
+                return;
+            }
+            Console.WriteLine("Dequeue is done!\n");
+            Show();
         }
 
         void Show()
