@@ -657,6 +657,8 @@ using System.Xml.Linq;
 
 
 // descending:
+
+// enqueue:
 DescendingPriorityQueue descendingPriorityQueue = new(5);
 descendingPriorityQueue.Enqueue(2, 1);
 descendingPriorityQueue.Enqueue(5, 2);
@@ -665,3 +667,14 @@ descendingPriorityQueue.Enqueue(26, 10);
 descendingPriorityQueue.Enqueue(21, 5);
 descendingPriorityQueue.Enqueue(20, 5);
 descendingPriorityQueue.Enqueue(20, 5);
+
+// deuque:
+descendingPriorityQueue.Dequeue();
+descendingPriorityQueue.Dequeue();
+descendingPriorityQueue.Enqueue(20, 5);
+descendingPriorityQueue.Dequeue();
+descendingPriorityQueue.Dequeue();
+descendingPriorityQueue.Dequeue();
+descendingPriorityQueue.Dequeue();
+descendingPriorityQueue.Dequeue();
+descendingPriorityQueue.Dequeue();

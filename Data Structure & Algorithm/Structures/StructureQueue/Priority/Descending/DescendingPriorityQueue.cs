@@ -54,6 +54,32 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Priority.Descendi
             }
         }
 
+        public void Dequeue()
+        {
+            Console.WriteLine("Dequeue start:\n");
+            if (currentIndex == 0)
+            {
+                Console.WriteLine("You dequeued the last element!\n");
+                currentIndex--;
+                return;
+            }
+            else if (currentIndex + 1 > 0)
+            {
+                for (int i = 1; i <= currentIndex; i++)
+                {
+                    elements[i - 1] = elements[i];
+                }
+                currentIndex--;
+            }
+            else
+            {
+                Console.WriteLine("Queue is empty!\n");
+                return;
+            }
+            Console.WriteLine("Dequeue is done!\n");
+            Show();
+        }
+
         void Show()
         {
             if (currentIndex < 0)
