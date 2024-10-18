@@ -12,7 +12,8 @@ using Data_Structure___Algorithm.Structures.StructureQueue.Circular;
 using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.InputRestricted;
 using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.NonRestricted;
 using Data_Structure___Algorithm.Structures.StructureQueue.DoubleEnded.OutputRestricted;
-using Data_Structure___Algorithm.Structures.StructureQueue.Priority;
+using Data_Structure___Algorithm.Structures.StructureQueue.Priority.Ascending;
+using Data_Structure___Algorithm.Structures.StructureQueue.Priority.Descending;
 using Data_Structure___Algorithm.Structures.StructureQueue.Simple;
 using Data_Structure___Algorithm.Structures.StructureStack;
 using System.Xml.Linq;
@@ -630,23 +631,37 @@ using System.Xml.Linq;
 
 
 // priority queue:
-AscendingPriorityQueue ascendingPriorityQueue = new(5);
+// ascending:
+//AscendingPriorityQueue ascendingPriorityQueue = new(5);
 
 // enqueue:
 //ascendingPriorityQueue.Enqueue(20, 1);
-ascendingPriorityQueue.Enqueue(10, 2);
-ascendingPriorityQueue.Enqueue(7, 5);
-ascendingPriorityQueue.Enqueue(3, 4);
-ascendingPriorityQueue.Enqueue(8, -1);
+//ascendingPriorityQueue.Enqueue(10, 2);
+//ascendingPriorityQueue.Enqueue(7, 5);
+//ascendingPriorityQueue.Enqueue(3, 4);
+//ascendingPriorityQueue.Enqueue(8, -1);
 //ascendingPriorityQueue.Enqueue(13, 7);
-ascendingPriorityQueue.Enqueue(20, -8);
-ascendingPriorityQueue.Enqueue(5, 10);
+//ascendingPriorityQueue.Enqueue(20, -8);
+//ascendingPriorityQueue.Enqueue(5, 10);
 
 // dequeue:
-ascendingPriorityQueue.Dequeue();
-ascendingPriorityQueue.Dequeue();
-ascendingPriorityQueue.Dequeue();
-ascendingPriorityQueue.Dequeue();
-ascendingPriorityQueue.Dequeue();
-ascendingPriorityQueue.Dequeue();
-ascendingPriorityQueue.Dequeue();
+//ascendingPriorityQueue.Dequeue();
+//ascendingPriorityQueue.Dequeue();
+//ascendingPriorityQueue.Dequeue();
+//ascendingPriorityQueue.Dequeue();
+//ascendingPriorityQueue.Enqueue(13, 7);
+//ascendingPriorityQueue.Dequeue();
+//ascendingPriorityQueue.Dequeue();
+//ascendingPriorityQueue.Enqueue(28, 1);
+//ascendingPriorityQueue.Dequeue();
+
+
+// descending:
+DescendingPriorityQueue descendingPriorityQueue = new(5);
+descendingPriorityQueue.Enqueue(2, 1);
+descendingPriorityQueue.Enqueue(5, 2);
+descendingPriorityQueue.Enqueue(17, 3);
+descendingPriorityQueue.Enqueue(26, 10);
+descendingPriorityQueue.Enqueue(21, 5);
+descendingPriorityQueue.Enqueue(20, 5);
+descendingPriorityQueue.Enqueue(20, 5);

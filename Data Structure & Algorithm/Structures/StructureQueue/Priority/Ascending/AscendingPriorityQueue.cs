@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data_Structure___Algorithm.Structures.StructureQueue.Priority
+namespace Data_Structure___Algorithm.Structures.StructureQueue.Priority.Ascending
 {
     internal class AscendingPriorityQueue
     {
@@ -15,10 +15,10 @@ namespace Data_Structure___Algorithm.Structures.StructureQueue.Priority
 
         public AscendingPriorityQueue(int size)
         {
-            Console.WriteLine(":::: Priority Queue ::::\n\n");
-            this.elements = new Element[size];
+            Console.WriteLine(":::: Ascending Priority Queue ::::\n\n");
+            elements = new Element[size];
             this.size = size;
-            this.currentIndex = -1;
+            currentIndex = -1;
         }
 
         public void Enqueue(int data, int priority)
