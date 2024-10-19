@@ -99,7 +99,7 @@ Uses:
 
 **Queue:** (linear data structure) that follows the **First-In-First-Out (FIFO)** principle. It operates like a line where elements are added at one end (rear) and removed from the otder end(front).
 
-Node:
+Note:
 1. all additions to the list are made at one end is called "rear"/"back".
 2. all deletions from the list are made at the other end called "front".
 3. The element which is first pushed into the order, the delete operation is fisrt performed on that.
@@ -115,7 +115,7 @@ Type:
     - Descending priority queue: elements are arranged in decreasing order of their priority values. element with largest priority is popped first.
 
 Advantages:
-1. a large amount of data can be managed efficiently with ease.
+1. A large amount of data can be managed efficiently with ease.
 2. Operations such as insertion and deletion can be performed with ease as it follows the first in first out rule.
 3. Queues are useful when a perticular service is used by multiple consumers.
 4. Queues are fast in speed for data inter-process communication.
@@ -129,4 +129,31 @@ Uses:
 1. CPU scheduling and disk scheduling.
 2. handling website traffic.
 3. playlist in media players.
-4. print documents in a serial.
+4. print documents in a serial.<br><br>
+
+**Tree:** (non-linear data structure) is a data structure that store data in hierarchical manner.
+
+Note:
+1. easy to navigate and search.
+2. it is a collection of nodes that are connected by edges and has hierarchical relationship between the nodes.
+3. basic terminologies:
+    - parent node: the node which is a predecessor of a node is called the parent node of that node.
+    - child node: the node which is the immediate successor of a node is called the child node of that node.
+    - root node: the topmost node of a tree or the node which does not have any parent node is called the root node.
+    - leaf node or external node: the node which do not have any child nodes are called leaf nodes.
+    - ancestor of a node: any predecessor nodes on the path of the root to that node are called ancestors of theat node.
+    - descendant: a node x is a descendant of another node y if and only if y is an ancestor of x.
+    - sibling: children of the same parend node are called siblings.
+    - level of a node: the count of edges on the path from the root node to that node.
+    - internal node: a node with at least one child is called internal node.
+    - neighbour of a node: parent or child nodes of that node are called neighbours of that node.
+    - subtree: any node of tha tree along with its descendant.
+    - depth of node: the depth of node x can be defined as the length of the path from the root to the node x.
+    - height of node: the height of node x can be defined as the longest path from the node x to the leaf node.
+4. A non-empty tree must contain exactly one root node and exactly one path from the root to all other nodes of the tree.
+5. the root node has level 0.
+6. the root node has 0 depth.
+7. tree is also known as a recursive data structure.
+8. tree provides moderate access/search (quicked than linked list and slower than arrays).
+9. insertion/deletion (quicker than arrays and slower than unordered linked lists).
+10. like linked list and unlike arrays, trees don't have any upper limit on the number of nodes as nodes are linked using pointers.
