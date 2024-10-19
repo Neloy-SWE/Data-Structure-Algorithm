@@ -136,20 +136,20 @@ Uses:
 Note:
 1. easy to navigate and search.
 2. it is a collection of nodes that are connected by edges and has hierarchical relationship between the nodes.
-3. basic terminologies:
-    - parent node: the node which is a predecessor of a node is called the parent node of that node.
-    - child node: the node which is the immediate successor of a node is called the child node of that node.
-    - root node: the topmost node of a tree or the node which does not have any parent node is called the root node.
-    - leaf node or external node: the node which do not have any child nodes are called leaf nodes.
-    - ancestor of a node: any predecessor nodes on the path of the root to that node are called ancestors of theat node.
-    - descendant: a node x is a descendant of another node y if and only if y is an ancestor of x.
-    - sibling: children of the same parend node are called siblings.
-    - level of a node: the count of edges on the path from the root node to that node.
-    - internal node: a node with at least one child is called internal node.
-    - neighbour of a node: parent or child nodes of that node are called neighbours of that node.
-    - subtree: any node of tha tree along with its descendant.
-    - depth of node: the depth of node x can be defined as the length of the path from the root to the node x.
-    - height of node: the height of node x can be defined as the longest path from the node x to the leaf node.
+3. **basic terminologies:**
+    - **parent node:** the node which is a predecessor of a node is called the parent node of that node.
+    - **child node:** the node which is the immediate successor of a node is called the child node of that node.
+    - **root node:** the topmost node of a tree or the node which does not have any parent node is called the root node.
+    - **leaf node or external node:** the node which do not have any child nodes are called leaf nodes.
+    - **ancestor of a node:** any predecessor nodes on the path of the root to that node are called ancestors of theat node.
+    - **descendant:** a node x is a descendant of another node y if and only if y is an ancestor of x.
+    - **sibling:** children of the same parend node are called siblings.
+    - **level of a node:** the count of edges on the path from the root node to that node.
+    - **internal node:** a node with at least one child is called internal node.
+    - **neighbour of a node:** parent or child nodes of that node are called neighbours of that node.
+    - **subtree:** any node of tha tree along with its descendant.
+    - **depth of node:** the depth of node x can be defined as the length of the path from the root to the node x.
+    - **height of node:** the height of node x can be defined as the longest path from the node x to the leaf node.
 4. A non-empty tree must contain exactly one root node and exactly one path from the root to all other nodes of the tree.
 5. the root node has level 0.
 6. the root node has 0 depth.
@@ -157,3 +157,19 @@ Note:
 8. tree provides moderate access/search (quicked than linked list and slower than arrays).
 9. insertion/deletion (quicker than arrays and slower than unordered linked lists).
 10. like linked list and unlike arrays, trees don't have any upper limit on the number of nodes as nodes are linked using pointers.
+
+Type:
+1. **binary tree:** it is a non-linear data structure in which each node can have at most two children which are referred to as the left child and the right child.
+    - each node in a binary tree has 3 part: 
+        - data.
+        - pointer to the left child.
+        - pointer to the right child.
+    - level start from 0 and the maximum number of nodes at level L of a binary tree is 2 to the power L. for level 0 2 to the power 0 = 1, for 1 its 2, for 2 its 4 and so on.
+    - the maximum number of nodes in a binary tree of height H is (2 to the power H) - 1.
+    - total number of leaf nodes in a binary tree = total number of nodes with 2 children + 1.
+    - in a binary tree with N nodes, the minimum possible height or the minimum number of levels in Log2(N+1).
+    - A binary tree with L leaves has at least | Log2L | + 1 levels.
+    - Type of binary tree:
+        1. **full binary tree:** a full binary tree is a binary tree with either 0 or two child for each node.
+        2. **complete binary tree:** a complete binary tree is a tree in which all the nodes are completely filled except the last level. in the last level all the nodes must be as left as possible. in a complete binary tree, the nodes should be added from the left.
+        3. **perfect binary tree:** a perfect binary tree is a special type of binary tree in which all the leaf nodes are at the same depth, and all non-leaf nodes have two children. this means that all leaf nodes are at the maximum depth of the tree, and the tree is completely filled with no gaps.
