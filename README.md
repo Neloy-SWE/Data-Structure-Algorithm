@@ -170,6 +170,25 @@ Type:
     - in a binary tree with N nodes, the minimum possible height or the minimum number of levels in Log2(N+1).
     - A binary tree with L leaves has at least | Log2L | + 1 levels.
     - Type of binary tree:
-        1. **full binary tree:** a full binary tree is a binary tree with either 0 or two child for each node.
-        2. **complete binary tree:** a complete binary tree is a tree in which all the nodes are completely filled except the last level. in the last level all the nodes must be as left as possible. in a complete binary tree, the nodes should be added from the left.
-        3. **perfect binary tree:** a perfect binary tree is a special type of binary tree in which all the leaf nodes are at the same depth, and all non-leaf nodes have two children. this means that all leaf nodes are at the maximum depth of the tree, and the tree is completely filled with no gaps.
+        - on the basis of number of children: 
+            1. **full binary tree:** a full binary tree is a binary tree with either 0 or two child for each node.
+            2. **degenerate binary tree:** every non-leaf node has just one child in a binary tree known as a degenerate binary tree. the tree effectively transforms into a linked list as a result, with each node linking to its single child.
+                - Type:
+                    - **left-skewed tree:** if all nodes in the degenerate tree have only a left child.
+                    - **right-skewed tree:** if al the nodes in the degenerate tree have only a right child.
+        - on the basis of completion of levels:  
+            1. **complete binary tree:** a complete binary tree is a tree in which all the nodes are completely filled except the last level. in the last level all the nodes must be as left as possible. in a complete binary tree, the nodes should be added from the left.
+            2. **perfect binary tree:** a perfect binary tree is a special type of binary tree in which all the leaf nodes are at the same depth, and all non-leaf nodes have two children. this means that all leaf nodes are at the maximum depth of the tree, and the tree is completely filled with no gaps.
+                - a tree with only the root node is also a perfect binary tree.
+            
+            3. **balanced binary tree:** the balanced binary tree is a tree in which both the left and right trees differ by atmost 1.
+
+                       4
+                      / \
+                     2   5
+                    / \   \
+                   1   3   6
+
+                here height of 1 is 0 and of 3 is 0. height of 2 = 1 + max(1, 3) = 1 + max(0,0) = 1. again height of 6 is 0 height of 5 = 1 + max(-1, 0) = 1 + 0 = 1. difference between 2 and 5 is 0. so it is a balanced tree.
+        - on the basis of node values:
+            1. **binary search tree:** 
