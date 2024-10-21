@@ -16,6 +16,7 @@ using Data_Structure___Algorithm.Structures.StructureQueue.Priority.Ascending;
 using Data_Structure___Algorithm.Structures.StructureQueue.Priority.Descending;
 using Data_Structure___Algorithm.Structures.StructureQueue.Simple;
 using Data_Structure___Algorithm.Structures.StructureStack;
+using Data_Structure___Algorithm.Structures.StructureTree.BinaryTree;
 using System.Xml.Linq;
 
 /// array
@@ -678,3 +679,13 @@ using System.Xml.Linq;
 //descendingPriorityQueue.Dequeue();
 //descendingPriorityQueue.Dequeue();
 //descendingPriorityQueue.Dequeue();
+
+// tree:
+// binary tree:
+BinaryTreeNode root = new(1);
+root.left = new(2);
+root.right = new(3);
+root.left.left = new(4);
+root.left.right = new(5);
+
+BinaryTreeShow.InOrderDepthFirstSearch(root);

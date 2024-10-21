@@ -4,15 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * basically binary tree can contain maximum 2 children.
+ */
+
 namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
 {
-    internal class BinaryNode
+    internal class BinaryTreeNode
     {
         public int data;
-        public BinaryNode left;
-        public BinaryNode right;
+        public BinaryTreeNode left;
+        public BinaryTreeNode right;
 
-        public BinaryNode(int data)
+        public BinaryTreeNode(int data)
         {
             this.data = data;
             this.left = null!;
