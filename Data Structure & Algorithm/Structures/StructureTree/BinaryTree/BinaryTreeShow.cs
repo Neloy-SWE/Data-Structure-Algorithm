@@ -25,5 +25,14 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
             PreOrderDepthFirstSearch(node.left);
             PreOrderDepthFirstSearch(node.right);
         }
+
+        public static void PostOrderDepthFirstSearch(BinaryTreeNode node)
+        {
+            // left - right - current/root
+            if (node == null) return;
+            PostOrderDepthFirstSearch(node.left);
+            PostOrderDepthFirstSearch(node.right);
+            Console.Write(node.data + " ");
+        }
     }
 }

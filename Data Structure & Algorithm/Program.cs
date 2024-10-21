@@ -691,3 +691,5 @@ root.left.right = new(5);
 BinaryTreeShow.InOrderDepthFirstSearch(root);
 Console.WriteLine();
 BinaryTreeShow.PreOrderDepthFirstSearch(root);
+Console.WriteLine();
+BinaryTreeShow.PostOrderDepthFirstSearch(root);
