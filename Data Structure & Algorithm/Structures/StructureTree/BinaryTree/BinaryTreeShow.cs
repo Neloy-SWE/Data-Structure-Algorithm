@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * here we use recursion technique
+ */
+
 namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
 {
     internal class BinaryTreeShow
@@ -33,6 +37,21 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
             PostOrderDepthFirstSearch(node.left);
             PostOrderDepthFirstSearch(node.right);
             Console.Write(node.data + " ");
+        }
+
+        public static void BreathFirstSearch(BinaryTreeNode root)
+        {
+            // level order
+            BinaryTreeQueue queue = new();
+            queue.Enqueue(root);
+
+            while (queue.Count() > 0)
+            {
+                BinaryTreeNode node = queue.Dequeue();
+                Console.Write(node.data + " ");
+                if (node.left != null) queue.Enqueue(node.left);
+                if (node.right != null) queue.Enqueue(node.right);
+            }
         }
     }
 }
