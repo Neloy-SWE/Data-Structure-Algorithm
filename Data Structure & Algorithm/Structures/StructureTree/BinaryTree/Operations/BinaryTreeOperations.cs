@@ -42,6 +42,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Operati
                     queue.Enqueue(node.right);
                 }
             }
+            BinaryTreeShow.Get(root);
             return root;
         }
     }

@@ -698,3 +698,6 @@ root.left.right = new(5);
 //BinaryTreeShow.BreathFirstSearch(root);
 //Console.WriteLine();
 //BinaryTreeShow.BreathFirstSearch(BinaryTreeOperations.Insert(root, 6));
+
+// insert:
+root = BinaryTreeOperations.Insert(root, 6);

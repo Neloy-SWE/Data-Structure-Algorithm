@@ -12,6 +12,26 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
 {
     internal class BinaryTreeShow
     {
+        public static void Get(BinaryTreeNode node)
+        {
+            Console.WriteLine("Showing binary tree\n");
+            Console.Write("In order depth first search (left - root - right)::: ");
+            InOrderDepthFirstSearch(node);
+            Console.WriteLine("\n");
+
+            Console.Write("Pre order depth first search (root - left - right)::: ");
+            PreOrderDepthFirstSearch(node);
+            Console.WriteLine("\n");
+
+            Console.Write("post order depth first search (left - right - root)::: ");
+            PostOrderDepthFirstSearch(node);
+            Console.WriteLine("\n");
+
+            Console.Write("Breath first search::: ");
+            BreathFirstSearch(node);
+            Console.WriteLine("\n");
+        }
+
         static void InOrderDepthFirstSearch(BinaryTreeNode node)
         {
             // left - root/current - right
