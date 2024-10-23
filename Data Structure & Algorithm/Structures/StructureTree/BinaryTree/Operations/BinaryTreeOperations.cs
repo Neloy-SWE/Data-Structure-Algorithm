@@ -10,9 +10,10 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Operati
     {
         public static BinaryTreeNode Insert(BinaryTreeNode root, int data)
         {
-            Console.WriteLine("Binary tree insertion executing:\n");
+            Console.WriteLine($"Binary tree insertion executing a new node with data: {data}\n");
             if (root == null)
             {
+                Console.WriteLine("Insertion done!\n");
                 return new(data);
             }
 
@@ -42,6 +43,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Operati
                     queue.Enqueue(node.right);
                 }
             }
+            Console.WriteLine("Insertion done!\n");
             BinaryTreeShow.Get(root);
             return root;
         }

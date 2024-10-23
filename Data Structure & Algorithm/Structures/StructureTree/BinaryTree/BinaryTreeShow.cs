@@ -30,6 +30,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
             Console.Write("Breath first search::: ");
             BreathFirstSearch(node);
             Console.WriteLine("\n");
+            Console.WriteLine("\n");
         }
 
         static void InOrderDepthFirstSearch(BinaryTreeNode node)

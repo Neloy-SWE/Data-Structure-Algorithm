@@ -701,3 +701,4 @@ root.left.right = new(5);
 
 // insert:
 root = BinaryTreeOperations.Insert(root, 6);
+root = BinaryTreeOperations.Insert(root, 7);
