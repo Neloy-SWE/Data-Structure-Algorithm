@@ -17,6 +17,7 @@ using Data_Structure___Algorithm.Structures.StructureQueue.Priority.Descending;
 using Data_Structure___Algorithm.Structures.StructureQueue.Simple;
 using Data_Structure___Algorithm.Structures.StructureStack;
 using Data_Structure___Algorithm.Structures.StructureTree.BinaryTree;
+using Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Operations;
 using System.Xml.Linq;
 
 /// array
@@ -695,3 +696,5 @@ Console.WriteLine();
 BinaryTreeShow.PostOrderDepthFirstSearch(root);
 Console.WriteLine();
 BinaryTreeShow.BreathFirstSearch(root);
+Console.WriteLine();
+BinaryTreeShow.BreathFirstSearch(BinaryTreeOperations.Insert(root, 6));
