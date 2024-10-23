@@ -12,7 +12,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
 {
     internal class BinaryTreeShow
     {
-        public static void InOrderDepthFirstSearch(BinaryTreeNode node)
+        static void InOrderDepthFirstSearch(BinaryTreeNode node)
         {
             // left - root/current - right
             if (node == null) return;
@@ -21,7 +21,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
             InOrderDepthFirstSearch(node.right);
         }
 
-        public static void PreOrderDepthFirstSearch(BinaryTreeNode node)
+        static void PreOrderDepthFirstSearch(BinaryTreeNode node)
         {
             // current/root - left - right
             if (node == null) return;
@@ -30,7 +30,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
             PreOrderDepthFirstSearch(node.right);
         }
 
-        public static void PostOrderDepthFirstSearch(BinaryTreeNode node)
+        static void PostOrderDepthFirstSearch(BinaryTreeNode node)
         {
             // left - right - current/root
             if (node == null) return;
@@ -39,7 +39,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
             Console.Write(node.data + " ");
         }
 
-        public static void BreathFirstSearch(BinaryTreeNode root)
+        static void BreathFirstSearch(BinaryTreeNode root)
         {
             // level order
             BinaryTreeQueue queue = new();
