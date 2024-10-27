@@ -191,4 +191,4 @@ Type:
 
                 here height of 1 is 0 and of 3 is 0. height of 2 = 1 + max(1, 3) = 1 + max(0,0) = 1. again height of 6 is 0 height of 5 = 1 + max(-1, 0) = 1 + 0 = 1. difference between 2 and 5 is 0. so it is a balanced tree.
         - on the basis of node values:
-            1. **binary search tree:** 
+            1. **binary search tree:** a binary search tree is a data structure used in computer science for organizing and storing data in sorted manner. Each node in a binary search tree has at most two children, a left child and a right child, with the left child containing values less than the parent node and the right child containing values greater than the parent node.
