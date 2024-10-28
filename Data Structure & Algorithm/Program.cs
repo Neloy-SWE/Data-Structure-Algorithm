@@ -700,8 +700,8 @@ root.left.right = new(5);
 //BinaryTreeShow.BreathFirstSearch(BinaryTreeOperations.Insert(root, 6));
 
 // insert:
-root = BinaryTreeOperations.Insert(root, 6);
-root = BinaryTreeOperations.Insert(root, 7);
+root = BinaryTreeOperations.InsertNode(root, 6);
+root = BinaryTreeOperations.InsertNode(root, 7);
 
 // search:
 
@@ -709,5 +709,5 @@ BinaryTreeOperations.SearchNode(root, 8);
 BinaryTreeOperations.SearchNode(root, 6);
 BinaryTreeOperations.SearchNode(root, 2);
 BinaryTreeOperations.SearchNode(root, 3);
-root = BinaryTreeOperations.Insert(root, 8);
+root = BinaryTreeOperations.InsertNode(root, 8);
 BinaryTreeOperations.SearchNode(root, 8);

@@ -63,7 +63,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
         static void BreathFirstSearch(BinaryTreeNode root)
         {
             // level order
-            BinaryTreeQueue queue = new();
+            BinaryTreeQueue<BinaryTreeNode> queue = new();
             queue.Enqueue(root);
 
             while (queue.Count() > 0)

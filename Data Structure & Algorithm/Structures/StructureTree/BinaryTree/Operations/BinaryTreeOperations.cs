@@ -8,7 +8,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Operati
 {
     internal class BinaryTreeOperations
     {
-        public static BinaryTreeNode Insert(BinaryTreeNode root, int data)
+        public static BinaryTreeNode InsertNode(BinaryTreeNode root, int data)
         {
             Console.WriteLine($"Binary tree insertion executing a new node with data: {data}\n");
             if (root == null)
@@ -17,7 +17,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Operati
                 return new(data);
             }
 
-            BinaryTreeQueue queue = new();
+            BinaryTreeQueue<BinaryTreeNode> queue = new();
             queue.Enqueue(root);
 
             while (queue.Count() > 0)
@@ -58,7 +58,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Operati
             }
             else
             {
-                BinaryTreeQueue queue = new();
+                BinaryTreeQueue<BinaryTreeNode> queue = new();
 
                 queue.Enqueue(root);
 

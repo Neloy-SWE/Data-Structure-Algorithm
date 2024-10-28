@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree
 {
-    internal class BinaryTreeQueue
+    internal class BinaryTreeQueue<T>
     {
-        private List<BinaryTreeNode> nodes = new List<BinaryTreeNode>();
+        private List<T> nodes = new List<T>();
 
-        public void Enqueue(BinaryTreeNode node)
+        public void Enqueue(T node)
         {
             nodes.Add(node);
         }
 
-        public BinaryTreeNode Dequeue()
+        public T Dequeue()
         {
-            BinaryTreeNode returnValue = nodes[0];
+            T returnValue = nodes[0];
             nodes.RemoveAt(0);
             return returnValue;
         }
