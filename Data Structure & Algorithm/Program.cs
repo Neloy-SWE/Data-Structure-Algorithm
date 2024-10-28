@@ -704,10 +704,14 @@ root = BinaryTreeOperations.InsertNode(root, 6);
 root = BinaryTreeOperations.InsertNode(root, 7);
 
 // search:
-
 BinaryTreeOperations.SearchNode(root, 8);
 BinaryTreeOperations.SearchNode(root, 6);
 BinaryTreeOperations.SearchNode(root, 2);
 BinaryTreeOperations.SearchNode(root, 3);
 root = BinaryTreeOperations.InsertNode(root, 8);
 BinaryTreeOperations.SearchNode(root, 8);
+
+// delete:
+BinaryTreeOperations.DeleteNode(root, 12);
+BinaryTreeOperations.DeleteNode(root, 8);
+BinaryTreeOperations.DeleteNode(root, 2);
