@@ -15,7 +15,9 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Operati
             if (root == null)
             {
                 Console.WriteLine("Insertion done!\n");
-                return new(data);
+                root = new(data);
+                BinaryTreeShow.Get(root);
+                return root;
             }
 
             BinaryTreeQueue<BinaryTreeNode> queue = new();

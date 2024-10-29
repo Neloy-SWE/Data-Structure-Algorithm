@@ -18,6 +18,7 @@ using Data_Structure___Algorithm.Structures.StructureQueue.Simple;
 using Data_Structure___Algorithm.Structures.StructureStack;
 using Data_Structure___Algorithm.Structures.StructureTree.BinaryTree;
 using Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Operations;
+using Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.BinarySearchTree.Operations;
 using System.Xml.Linq;
 
 /// array
@@ -683,11 +684,11 @@ using System.Xml.Linq;
 
 // tree:
 // binary tree:
-BinaryTreeNode root = new(1);
-root.left = new(2);
-root.right = new(3);
-root.left.left = new(4);
-root.left.right = new(5);
+//BinaryTreeNode root = new(1);
+//root.left = new(2);
+//root.right = new(3);
+//root.left.left = new(4);
+//root.left.right = new(5);
 
 //BinaryTreeShow.InOrderDepthFirstSearch(root);
 //Console.WriteLine();
@@ -700,18 +701,26 @@ root.left.right = new(5);
 //BinaryTreeShow.BreathFirstSearch(BinaryTreeOperations.Insert(root, 6));
 
 // insert:
-root = BinaryTreeOperations.InsertNode(root, 6);
-root = BinaryTreeOperations.InsertNode(root, 7);
+//root = BinaryTreeOperations.InsertNode(root, 6);
+//root = BinaryTreeOperations.InsertNode(root, 7);
 
 // search:
-BinaryTreeOperations.SearchNode(root, 8);
-BinaryTreeOperations.SearchNode(root, 6);
-BinaryTreeOperations.SearchNode(root, 2);
-BinaryTreeOperations.SearchNode(root, 3);
-root = BinaryTreeOperations.InsertNode(root, 8);
-BinaryTreeOperations.SearchNode(root, 8);
+//BinaryTreeOperations.SearchNode(root, 8);
+//BinaryTreeOperations.SearchNode(root, 6);
+//BinaryTreeOperations.SearchNode(root, 2);
+//BinaryTreeOperations.SearchNode(root, 3);
+//root = BinaryTreeOperations.InsertNode(root, 8);
+//BinaryTreeOperations.SearchNode(root, 8);
 
 // delete:
-BinaryTreeOperations.DeleteNode(root, 12);
-BinaryTreeOperations.DeleteNode(root, 8);
-BinaryTreeOperations.DeleteNode(root, 2);
+//BinaryTreeOperations.DeleteNode(root, 12);
+//BinaryTreeOperations.DeleteNode(root, 8);
+//BinaryTreeOperations.DeleteNode(root, 2);
+
+// binary search tree:
+// insertion:
+
+BinaryTreeNode root = null!;
+root = BinarySearchTreeOperations.InsertBSTNodeRecursive(root, 1);
+root = BinarySearchTreeOperations.InsertBSTNodeRecursive(root, 2);
+root = BinarySearchTreeOperations.InsertBSTNodeRecursive(root, 3);
