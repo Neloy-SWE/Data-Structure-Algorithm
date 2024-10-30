@@ -25,7 +25,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
 
             if (data == root.data)
             {
-                Console.WriteLine("Duplicate value is not allowed!\n");
+                //Console.WriteLine("Duplicate value is not allowed!\n");
                 return root;
             }
             //isFirst = false;
@@ -39,6 +39,52 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
             }
             //Console.WriteLine("Insertion done!\n");
             //BinaryTreeShow.Get(root);
+            return root;
+        }
+
+        public static BinaryTreeNode InsertBSTNodeIteration(BinaryTreeNode root, int data)
+        {
+            Console.WriteLine($"Binary search tree insertion executing a new node with data: {data}\n");
+            BinaryTreeNode temporaryNode = new(data);
+
+            if (root == null)
+            {
+                Console.WriteLine("Insertion done!\n");
+                BinaryTreeShow.Get(temporaryNode);
+                return temporaryNode;
+            }
+
+            BinaryTreeNode parentNode = null!;
+            BinaryTreeNode currentNode = root;
+
+            while (currentNode != null)
+            {
+                parentNode = currentNode;
+                if (currentNode.data > data)
+                {
+                    currentNode = currentNode.left;
+                }
+                else if (currentNode.data < data)
+                {
+                    currentNode = currentNode.right;
+                }
+                else
+                {
+                    Console.WriteLine("Duplicate value is not allowed!\n");
+                    return root;
+                }
+            }
+
+            if (parentNode.data > data)
+            {
+                parentNode.left = temporaryNode;
+            }
+            else
+            {
+                parentNode.right = temporaryNode;
+            }
+            Console.WriteLine("Insertion done!\n");
+            BinaryTreeShow.Get(root);
             return root;
         }
     }
