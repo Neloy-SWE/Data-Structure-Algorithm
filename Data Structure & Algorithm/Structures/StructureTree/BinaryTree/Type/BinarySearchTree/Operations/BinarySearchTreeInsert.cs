@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.BinarySearchTree.Operations
 {
-    internal class BinarySearchTreeOperations
+    internal class BinarySearchTreeInsert
     {
         //private static bool isFirst = true; 
-        public static BinaryTreeNode InsertBSTNodeRecursive(BinaryTreeNode root, int data)
+        public static BinaryTreeNode Recursive(BinaryTreeNode root, int data)
         {
             //if (isFirst)
             //{
@@ -31,18 +31,18 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
             //isFirst = false;
             if (data < root.data)
             {
-                root.left = InsertBSTNodeRecursive(root.left, data);
+                root.left = Recursive(root.left, data);
             }
             else if (data > root.data)
             {
-                root.right = InsertBSTNodeRecursive(root.right, data);
+                root.right = Recursive(root.right, data);
             }
             //Console.WriteLine("Insertion done!\n");
             //BinaryTreeShow.Get(root);
             return root;
         }
 
-        public static BinaryTreeNode InsertBSTNodeIteration(BinaryTreeNode root, int data)
+        public static BinaryTreeNode Iteration(BinaryTreeNode root, int data)
         {
             Console.WriteLine($"Binary search tree insertion executing a new node with data: {data}\n");
             BinaryTreeNode temporaryNode = new(data);
@@ -70,7 +70,7 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
                 }
                 else
                 {
-                    Console.WriteLine("Duplicate value is not allowed!\n");
+                    Console.WriteLine("Duplicate value is not allowed!\n\n");
                     return root;
                 }
             }

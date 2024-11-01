@@ -721,11 +721,20 @@ using System.Xml.Linq;
 // insertion:
 
 BinaryTreeNode root = null!;
-//root = BinarySearchTreeOperations.InsertBSTNodeRecursive(root, 1);
-//root = BinarySearchTreeOperations.InsertBSTNodeRecursive(root, 2);
-//root = BinarySearchTreeOperations.InsertBSTNodeRecursive(root, 3);
 
-root = BinarySearchTreeOperations.InsertBSTNodeIteration(root, 2);
-root = BinarySearchTreeOperations.InsertBSTNodeIteration(root, 1);
-root = BinarySearchTreeOperations.InsertBSTNodeIteration(root, 3);
-root = BinarySearchTreeOperations.InsertBSTNodeIteration(root, 3);
+// recursive:
+//root = BinarySearchTreeOperations.Recursive(root, 1);
+//root = BinarySearchTreeOperations.Recursive(root, 2);
+//root = BinarySearchTreeOperations.Recursive(root, 3);
+
+// iteration:
+root = BinarySearchTreeInsert.Iteration(root, 2);
+root = BinarySearchTreeInsert.Iteration(root, 1);
+root = BinarySearchTreeInsert.Iteration(root, 3);
+root = BinarySearchTreeInsert.Iteration(root, 3);
+
+BinarySearchTreeSearch.Iteration(root, 4);
+BinarySearchTreeSearch.Iteration(root, 3);
+BinarySearchTreeSearch.Iteration(root, 2);
+BinarySearchTreeSearch.Iteration(root, 1);
+BinarySearchTreeSearch.Iteration(root, 5);
