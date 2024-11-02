@@ -718,10 +718,9 @@ using System.Xml.Linq;
 //BinaryTreeOperations.DeleteNode(root, 2);
 
 // binary search tree:
-// insertion:
-
 BinaryTreeNode root = null!;
 
+// insertion:
 // recursive:
 //root = BinarySearchTreeOperations.Recursive(root, 1);
 //root = BinarySearchTreeOperations.Recursive(root, 2);
@@ -733,8 +732,17 @@ root = BinarySearchTreeInsert.Iteration(root, 1);
 root = BinarySearchTreeInsert.Iteration(root, 3);
 root = BinarySearchTreeInsert.Iteration(root, 3);
 
-BinarySearchTreeSearch.Iteration(root, 4);
-BinarySearchTreeSearch.Iteration(root, 3);
-BinarySearchTreeSearch.Iteration(root, 2);
-BinarySearchTreeSearch.Iteration(root, 1);
-BinarySearchTreeSearch.Iteration(root, 5);
+
+// search:
+// iteration:
+//BinarySearchTreeSearch.Iteration(root, 4);
+//BinarySearchTreeSearch.Iteration(root, 3);
+//BinarySearchTreeSearch.Iteration(root, 2);
+//BinarySearchTreeSearch.Iteration(root, 1);
+//BinarySearchTreeSearch.Iteration(root, 5);
+
+// recursive:
+BinarySearchTreeSearch.Recursive(root, 1);
+BinarySearchTreeSearch.Recursive(root, 2);
+BinarySearchTreeSearch.Recursive(root, 3);
+BinarySearchTreeSearch.Recursive(root, 4);

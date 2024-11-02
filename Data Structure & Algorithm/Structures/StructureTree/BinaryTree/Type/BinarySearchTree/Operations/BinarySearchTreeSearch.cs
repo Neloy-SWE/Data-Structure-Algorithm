@@ -13,8 +13,9 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
             Console.WriteLine($"Searching {data} in tree:\n");
             BinaryTreeNode currentNode = root;
 
-            while (currentNode != null) {
-            
+            while (currentNode != null)
+            {
+
                 if (currentNode.data == data)
                 {
                     Console.WriteLine($"data: {data} found in tree!\n\n");
@@ -33,5 +34,29 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
 
             Console.WriteLine("Data not found!\n\n");
         }
+
+        public static void Recursive(BinaryTreeNode root, int data)
+        {
+            if (root == null)
+            {
+                Console.WriteLine("Data not found!\n\n");
+                return;
+            }
+            else if (root.data == data)
+            {
+                Console.WriteLine($"data: {data} found in tree!\n\n");
+                return;
+            }
+
+            if (root.data < data)
+            {
+                Recursive(root.right, data);
+            }
+            else
+            {
+                Recursive(root.left, data);
+            }
+        }
+
     }
 }
