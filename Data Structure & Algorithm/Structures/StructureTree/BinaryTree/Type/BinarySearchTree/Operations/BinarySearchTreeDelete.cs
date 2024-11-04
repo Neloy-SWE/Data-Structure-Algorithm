@@ -87,6 +87,40 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
             return root;
         }
 
+        public static BinaryTreeNode Recursive(BinaryTreeNode root, int data)
+        {
+            if (root == null)
+            {
+                return root!;
+            }
+
+            if (root.data > data)
+            {
+                root.left = Recursive(root.left, data);
+            }
+            else if (root.data < data)
+            {
+                root.right = Recursive(root.right, data);
+            }
+            else
+            {
+                if (root.left == null)
+                {
+                    return root.right;
+                }
+
+                if (root.right == null)
+                {
+                    return root.left;
+                }
+
+                BinaryTreeNode successorNode = GetSuccessorNode(root);
+                root.data = successorNode.data;
+                root.right = Recursive(root.right, successorNode.data);
+            }
+            return root;
+        }
+
         static BinaryTreeNode GetSuccessorNode(BinaryTreeNode currentNode)
         {
             currentNode = currentNode.right;
