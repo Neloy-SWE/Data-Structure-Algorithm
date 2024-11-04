@@ -759,4 +759,7 @@ root = BinarySearchTreeInsert.Iteration(root, 17);
 //BinarySearchTreeSearch.Recursive(root, 3);
 //BinarySearchTreeSearch.Recursive(root, 4);
 
+
+// delete:
+// iteration:
 root = BinarySearchTreeDelete.Iteration(root, 10);

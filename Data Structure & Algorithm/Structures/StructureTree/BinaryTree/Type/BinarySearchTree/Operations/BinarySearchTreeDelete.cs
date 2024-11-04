@@ -16,7 +16,6 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
 
             while (currentNode != null && currentNode.data != data)
             {
-
                 previousNode = currentNode;
                 if (data < currentNode.data)
                 {
@@ -86,6 +85,16 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
             Console.WriteLine("Deletion done!\n");
             BinaryTreeShow.Get(root);
             return root;
+        }
+
+        static BinaryTreeNode GetSuccessorNode(BinaryTreeNode currentNode)
+        {
+            currentNode = currentNode.right;
+            while (currentNode != null && currentNode.left != null)
+            {
+                currentNode = currentNode.left;
+            }
+            return currentNode!;
         }
     }
 }
