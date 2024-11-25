@@ -8,9 +8,10 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
 {
     internal class BinarySearchTreeDelete
     {
+        static bool isStart = true;
         public static BinaryTreeNode Iteration(BinaryTreeNode root, int data)
         {
-            Console.WriteLine($"Binary search tree deletion executing the node with data: {data}\n");
+            Console.WriteLine($"Binary search tree deletion executing the node with data: {data} (iteration)\n");
             BinaryTreeNode currentNode = root;
             BinaryTreeNode previousNode = null!;
 
@@ -89,6 +90,11 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
 
         public static BinaryTreeNode Recursive(BinaryTreeNode root, int data)
         {
+            if (isStart)
+            {
+                Console.WriteLine($"Binary search tree deletion executing the node with data: {data} (recursive)\n");
+                isStart = false;
+            }
             if (root == null)
             {
                 return root!;
@@ -114,10 +120,16 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
                     return root.left;
                 }
 
-                BinaryTreeNode successorNode = GetSuccessorNode(root);
-                root.data = successorNode.data;
-                root.right = Recursive(root.right, successorNode.data);
+                //BinaryTreeNode successorNode = GetSuccessorNode(root);
+                //root.data = successorNode.data;
+                //root.right = Recursive(root.right, successorNode.data);
+
+                BinaryTreeNode predecessorNode = GetPredecessorNode(root);
+                root.data = predecessorNode.data;
+                root.left = Recursive(root.left, predecessorNode.data);
             }
+            //Console.WriteLine("Deletion done!\n");
+            //BinaryTreeShow.Get(root);
             return root;
         }
 
@@ -127,6 +139,16 @@ namespace Data_Structure___Algorithm.Structures.StructureTree.BinaryTree.Type.Bi
             while (currentNode != null && currentNode.left != null)
             {
                 currentNode = currentNode.left;
+            }
+            return currentNode!;
+        }
+
+        static BinaryTreeNode GetPredecessorNode(BinaryTreeNode currentNode)
+        {
+            currentNode = currentNode.left;
+            while (currentNode != null && currentNode.right != null)
+            {
+                currentNode = currentNode.right;
             }
             return currentNode!;
         }

@@ -727,22 +727,22 @@ BinaryTreeNode root = null!;
 //root = BinarySearchTreeOperations.Recursive(root, 3);
 
 // iteration:
-root = BinarySearchTreeInsert.Iteration(root, 10);
-root = BinarySearchTreeInsert.Iteration(root, 8);
-root = BinarySearchTreeInsert.Iteration(root, 7);
-root = BinarySearchTreeInsert.Iteration(root, 6);
-root = BinarySearchTreeInsert.Iteration(root, 5);
-root = BinarySearchTreeInsert.Iteration(root, 4);
-root = BinarySearchTreeInsert.Iteration(root, 3);
-root = BinarySearchTreeInsert.Iteration(root, 2);
+//root = BinarySearchTreeInsert.Iteration(root, 10);
+//root = BinarySearchTreeInsert.Iteration(root, 7);
+//root = BinarySearchTreeInsert.Iteration(root, 8);
+//root = BinarySearchTreeInsert.Iteration(root, 6);
+//root = BinarySearchTreeInsert.Iteration(root, 5);
+//root = BinarySearchTreeInsert.Iteration(root, 4);
+//root = BinarySearchTreeInsert.Iteration(root, 3);
+//root = BinarySearchTreeInsert.Iteration(root, 2);
 
-root = BinarySearchTreeInsert.Iteration(root, 11);
-root = BinarySearchTreeInsert.Iteration(root, 12);
-root = BinarySearchTreeInsert.Iteration(root, 13);
-root = BinarySearchTreeInsert.Iteration(root, 14);
-root = BinarySearchTreeInsert.Iteration(root, 15);
-root = BinarySearchTreeInsert.Iteration(root, 16);
-root = BinarySearchTreeInsert.Iteration(root, 17);
+//root = BinarySearchTreeInsert.Iteration(root, 11);
+//root = BinarySearchTreeInsert.Iteration(root, 12);
+//root = BinarySearchTreeInsert.Iteration(root, 13);
+//root = BinarySearchTreeInsert.Iteration(root, 14);
+//root = BinarySearchTreeInsert.Iteration(root, 15);
+//root = BinarySearchTreeInsert.Iteration(root, 16);
+//root = BinarySearchTreeInsert.Iteration(root, 17);
 
 
 // search:
@@ -760,6 +760,35 @@ root = BinarySearchTreeInsert.Iteration(root, 17);
 //BinarySearchTreeSearch.Recursive(root, 4);
 
 
+//root = BinarySearchTreeInsert.Iteration(root, 10);
+//root = BinarySearchTreeInsert.Iteration(root, 5);
+//root = BinarySearchTreeInsert.Iteration(root, 15);
+//root = BinarySearchTreeInsert.Iteration(root, 12);
+//root = BinarySearchTreeInsert.Iteration(root, 16);
+//root = BinarySearchTreeInsert.Iteration(root, 4);
+//root = BinarySearchTreeInsert.Iteration(root, 6);
+//root = BinarySearchTreeInsert.Iteration(root, 1);
+//root = BinarySearchTreeInsert.Iteration(root, 3);
+//root = BinarySearchTreeInsert.Iteration(root, 11);
+//root = BinarySearchTreeInsert.Iteration(root, 14);
+//root = BinarySearchTreeInsert.Iteration(root, 17);
+
+//root = BinarySearchTreeInsert.Iteration(root, 13);
+
+
+root = BinarySearchTreeInsert.Iteration(root, 50);
+root = BinarySearchTreeInsert.Iteration(root, 40);
+//root = BinarySearchTreeInsert.Iteration(root, 30);
+//root = BinarySearchTreeInsert.Iteration(root, 20);
+root = BinarySearchTreeInsert.Iteration(root, 220);
+root = BinarySearchTreeInsert.Iteration(root, 170);
+root = BinarySearchTreeInsert.Iteration(root, 230);
+root = BinarySearchTreeInsert.Iteration(root, 180);
+root = BinarySearchTreeInsert.Iteration(root, 100);
+root = BinarySearchTreeInsert.Iteration(root, 190);
+root = BinarySearchTreeInsert.Iteration(root, 175);
+
+
 // delete:
 // iteration:
-root = BinarySearchTreeDelete.Iteration(root, 10);
+root = BinarySearchTreeDelete.Recursive(root, 220);
