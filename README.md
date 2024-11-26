@@ -199,3 +199,10 @@ Type:
                     - The left child's rightmost (maximum) node (known as the in-order predecessor).
 
                     we can implement it using both recursive and iterative technique.
+            2. **AVL tree:** Adelson-Velsky and Landis (AVL) tree defined as a self-balancing binary search tree where the difference between heights of left and right subtrees for any node cannot be more than one.
+                
+                Note:
+                1. tree is said to be balanced if balnce factor of each node is between -1 to 1, otherwise, the tree will be unbalanced and need to be balanced. here, ***balance factor (K) = height(left(K)) - height(right(K))***
+                    - if balance factor of any node is 1, it means that the left sub-tree is one level higher than the right sub-tree.
+                    - if balance factor of any node is 0, it means that the left sub-tree and right sub-tree contain equal height.
+                    - if balance factor of any node is -1 it means that the left sub-tree is one level lower than the right sub-tree.
