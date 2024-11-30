@@ -211,6 +211,17 @@ Type:
                     - RR rotation: inserted node is in the right subtree of right subtree of A
                     - LR rotation: inserted node is in the right subtree of left subtree of A
                     - RL rotation: inserted node is in the left subtree of right subtree of A
+                
+                Advantages:
+                1. AVL trees can self-balance themselves and therefore provides time complexity as O(Log n) for search, insert and delete.
+                2. it is a BST (with balancing), so items can be traversed in sorted order.
+                3. since the balancing rules are strict compared to red black treee, AVL trees in general have relatively less height and hence the search is faster.
+                4. AVL tree is relatively less complex to understand and implement compared to red black trees.
+
+                Disadvantages:
+                1. difficult to implement compared to normal BST and easier compared to red black.
+                3. Due to its rather strict balance, AVL trees provide complicated insertion and removal operations as more rotations are performed.
+
             3. **red-black tree:** red-black trees are another type of the balanced binary search trees with two coloured node: red and black. red black tree use a set of rules to maintain balance, ensuring logaithimic time complexity for operations like insertion, deletion and searching, regardless of the initial shape of the tree. red black trees are self-balancing, using, a simple color-coding scheme to adjust the tree after each modification.
                 
                 Properties of red-black trees:
