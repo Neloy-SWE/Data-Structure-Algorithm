@@ -206,3 +206,18 @@ Type:
                     - if balance factor of any node is 1, it means that the left sub-tree is one level higher than the right sub-tree.
                     - if balance factor of any node is 0, it means that the left sub-tree and right sub-tree contain equal height.
                     - if balance factor of any node is -1 it means that the left sub-tree is one level lower than the right sub-tree.
+                2. AVL rotation:
+                    - LL rotation: inserted node is in the left subtree of left subtree of A
+                    - RR rotation: inserted node is in the right subtree of right subtree of A
+                    - LR rotation: inserted node is in the right subtree of left subtree of A
+                    - RL rotation: inserted node is in the left subtree of right subtree of A
+            3. **red-black tree:** red-black trees are another type of the balanced binary search trees with two coloured node: red and black. red black tree use a set of rules to maintain balance, ensuring logaithimic time complexity for operations like insertion, deletion and searching, regardless of the initial shape of the tree. red black trees are self-balancing, using, a simple color-coding scheme to adjust the tree after each modification.
+                
+                Properties of red-black trees:
+                1. Node color: each node is either read or black.
+                2. root property: the root of the tree is always black.
+                3. red property: red nodes cannot have red children (no two consecutive red nodes on any path).
+                4. black property: even path from a node to its descendant null nodes (leaves) has the same number of black nodes.
+                5. leaf property: all leaves (NIL nodes) are black. if a node's child is missing then we will assume that it has a nil child in that place and this nil child is always colored black.
+
+                
